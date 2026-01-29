@@ -2,14 +2,21 @@
 <section class="inner-banner position-relative">
     <picture><img src="public/images/inner-banner.jpg" width="1920" height="359" alt=""></picture>
 </section>
+    <section class="bread-crumbs">
+        <div class="container-ctn">
+            <ul class="d-flex flex-wrap align-items-center">
+           
+            </ul>
+        </div>
+    </section>
 
 
 
 
-<section class="not-found">
+<section class="not-found thank-you-padding">
     <div class="container-ctn  text-center">
                 <picture>
-                    <img loading="lazy" src="public/images/thank-you.png" class=" h-auto" width="928" height="180" alt="">
+                    <img loading="lazy" src="public/images/thank-you.png" class=" h-auto" width="254" height="168" alt="">
                 </picture>
 
             <h1 class="h2">Thank You</h1>

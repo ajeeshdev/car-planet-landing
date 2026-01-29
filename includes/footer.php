@@ -102,9 +102,10 @@
     </div>
     </footer>
 
-    <div class="offcanvas offcanvas-end mobileMenu " tabindex="-1" id="mobileMenu"
+    <div class="offcanvas offcanvas-top productMenu " tabindex="-1" id="mobileMenu"
         aria-labelledby="mobileOffcanvasLabelMobile" aria-modal="true" role="dialog">
-        <div class="offcanvas-header">
+        <div class="container-ctn position-relative">
+               <div class="offcanvas-header justify-content-center">
             <h2 class="visually-hidden" id="mobileOffcanvasLabelMobile">Mobile Menu</h2>
             <a href="index.php" aria-label="Website Logo">
                 <picture><img src="public/images/logo.png" alt="Wellbing logo" width="180" height="41" /></picture>
@@ -116,29 +117,92 @@
                 </svg>
             </button>
         </div>
+        </div>
 
-        <div class="offcanvas-body container-ctn">
-            <nav aria-label="Mobile primary navigation">
-                <ul>
-                    <li><a href="index.php" aria-label="Go to home page">Home</a></li>
-                    <li><a href="about.php" aria-label="Learn more about us">About Us</a></li>
-                    <li><a href="services.php" aria-label="Explore our services">Services</a></li>
-                    <li><a href="products.php" aria-label="Explore our products">Products</a></li>
-                    <li><a href="" aria-label="Explore our blogs">Blogs</a></li>
-                    <li><a href="" aria-label="Explore our media">Media</a></li>
-                    <li><a href="" aria-label="Explore our career">Careers</a></li>
-                    <li><a href="contact-us.php" aria-label="Contact us">Contact Us</a></li>
+        <div class="offcanvas-body">
+            <nav aria-label="Mobile product-navigation" class="product-navigation  container-ctn">
+                <ul class="">
+                    <li>
+                        <a href="">Product Category</a>
+                        <ul>
+                            
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Product Category</a>
+                        <ul>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Product Category</a>
+                        <ul>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Product Category</a>
+                        <ul>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Product Category</a>
+                        <ul>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Product Category</a>
+                        <ul>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Product Category</a>
+                        <ul>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">Product Category</a>
+                        <ul>
+                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="">Product Name</a></li>
+                        </ul>
+                    </li>
                 </ul>
-
             </nav>
 
         </div>
     </div>
 
     <!-- menu Desktop -->
-    <div class="offcanvas offcanvas-end burgerMenu" tabindex="-1" id="burgerMenu" aria-labelledby="mobileOffcanvasLabelDesktop"
+    <div class="offcanvas offcanvas-top burgerMenu" tabindex="-1" id="burgerMenu" aria-labelledby="mobileOffcanvasLabelDesktop"
         aria-modal="true" role="dialog">
-        <div class="offcanvas-header">
+        <div class="offcanvas-header container-ctn">
             <h2 class="visually-hidden" id="mobileOffcanvasLabelDesktop">Mobile Menu</h2>
             <a href="index.php" aria-label="Website Logo">
                 <picture><img src="public/images/logo.png" alt="Wellbing logo" width="180" height="41" /></picture>
@@ -151,53 +215,118 @@
             </button>
         </div>
 
-        <div class="offcanvas-body ">
-            <nav aria-label="Mobile primary navigation">
+        <div class="offcanvas-body  ">
+            <nav aria-label="Mobile primary navigation " class="burgerMenu-nav container-ctn">
                 <ul>
-                    <li><a href="index.php" aria-label="Go to home page">Home</a></li>
-                    <li><a href="about.php" aria-label="Learn more about us">About</a></li>
-                    <li><a href="services.php" aria-label="Explore our services">Services</a></li>
-                    <li><a href="products.php" aria-label="Explore our services">Services</a></li>
-                    <li><a href="blog.php" aria-label="View our work">Our Work</a></li>
-                    <li><a href="contact-us.php" aria-label="Contact us">Contact</a></li>
-                </ul>
+                    <li>
+                        <strong><a href="javascript:void(0)" aria-label="Explore our services">Quick Links</a></strong>
+                          <ul>
+                            <li><a href="index.php" aria-label="Go to home page">Home</a></li>
+                            <li><a href="about.php" aria-label="Learn more about us">About</a></li>
+                                <li><a href="products.php" aria-label="Explore our Product Category">Products</a></li>
+                            <li><a href="career.php" aria-label="View career opportunities">Career</a></li>
+                            <li><a href="blog.php" aria-label="View our work">Our Work</a></li>
+                            <li><a href="contact.php" aria-label="Contact us">Contact</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong><a href="services.php" aria-label="Explore our services">Services</a></strong>
+                          <ul>
+                            <li><a href="services-detail.php" aria-label="Explore our Services">Service</a></li>
+                            <li><a href="services-detail.php" aria-label="Explore our Services">Service</a></li>
+                            <li><a href="services-detail.php" aria-label="Explore our Services">Service</a></li>
+                            <li><a href="services-detail.php" aria-label="Explore our Services">Service</a></li>
+                            <li><a href="services-detail.php" aria-label="Explore our Services">Service</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong><a href="services.php" aria-label="Explore our services">Products</a></strong>
+                          <ul>
+                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
+                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
+                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
+                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
+                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
+                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
+                        </ul>
+                    </li>
+        
+         
+                    <li class="address-info">
+                                                <strong><a href="javascript:void(0)" aria-label="Explore our services">Contact</a></strong>
 
-
-                <div class="contact-info">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path
-                            d="M15.8334 8.33333C15.8334 11.6467 10.0001 17.5 10.0001 17.5C10.0001 17.5 4.16675 11.6467 4.16675 8.33333C4.16675 5.02 6.77841 2.5 10.0001 2.5C13.2217 2.5 15.8334 5.02 15.8334 8.33333Z"
-                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                        <path
-                            d="M10 10.8335C11.3807 10.8335 12.5 9.71421 12.5 8.3335C12.5 6.95278 11.3807 5.8335 10 5.8335C8.61929 5.8335 7.5 6.95278 7.5 8.3335C7.5 9.71421 8.61929 10.8335 10 10.8335Z"
-                            stroke="black" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                    <span>Address</span>
+                         <ul>
+                            <li>
+                    <span>
+                     
+                    Address</span>
                     <p>Wellbing Printing Press LLC.
                         13th B Al Khabaisi Street, Deira, Dubai, UAE.
-                         P.O. Box: 5143, Dubai U.A.E.</p>
+                         P.O. Box: 5143, Dubai U.A.E.</p></li>
+                        <li>
+                            
+                        <span> Email</span>
+                        <a href="mailto:sales1@wellbingmaschinery.com" target="_blank">
+                      sales1@wellbingmaschinery.com
+                        </a>
+                        <a href="mailto:wellbing@wellbingmachinery.com" target="_blank">
+                      wellbing@wellbingmachinery.com
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
-                        <path
-                            d="M17 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V13C0 13.7956 0.316071 14.5587 0.87868 15.1213C1.44129 15.6839 2.20435 16 3 16H17C17.7956 16 18.5587 15.6839 19.1213 15.1213C19.6839 14.5587 20 13.7956 20 13V3C20 2.20435 19.6839 1.44129 19.1213 0.87868C18.5587 0.316071 17.7956 0 17 0ZM16.33 2L10 6.75L3.67 2H16.33ZM17 14H3C2.73478 14 2.48043 13.8946 2.29289 13.7071C2.10536 13.5196 2 13.2652 2 13V3.25L9.4 8.8C9.5731 8.92982 9.78363 9 10 9C10.2164 9 10.4269 8.92982 10.6 8.8L18 3.25V13C18 13.2652 17.8946 13.5196 17.7071 13.7071C17.5196 13.8946 17.2652 14 17 14Z"
-                            fill="black" /> </svg>
-                    <span>Email</span>
-                    <a href="mailto:info@zppdubai.com" target="_blank">
-                        info@Zppdubai.com
-                    </a>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M2.48303 0.793297C3.70003 -0.416703 5.70403 -0.201703 6.72303 1.1603L7.98503 2.8443C8.81503 3.9523 8.74103 5.5003 7.75603 6.4793L7.51803 6.7173C7.49104 6.81721 7.4883 6.92211 7.51003 7.0233C7.57303 7.4313 7.91403 8.2953 9.34203 9.7153C10.77 11.1353 11.64 11.4753 12.054 11.5393C12.1583 11.5603 12.2661 11.5572 12.369 11.5303L12.777 11.1243C13.653 10.2543 14.997 10.0913 16.081 10.6803L17.991 11.7203C19.628 12.6083 20.041 14.8323 18.701 16.1653L17.28 17.5773C16.832 18.0223 16.23 18.3933 15.496 18.4623C13.686 18.6313 9.46903 18.4153 5.03603 14.0083C0.899027 9.8943 0.105027 6.3063 0.00402701 4.5383C-0.045973 3.6443 0.376027 2.8883 0.914027 2.3543L2.48303 0.793297ZM5.52303 2.0593C5.01603 1.3823 4.07203 1.3283 3.54003 1.8573L1.97003 3.4173C1.64003 3.7453 1.48203 4.1073 1.50203 4.4533C1.58203 5.8583 2.22203 9.0953 6.09403 12.9453C10.156 16.9833 13.907 17.1043 15.357 16.9683C15.653 16.9413 15.947 16.7873 16.222 16.5143L17.642 15.1013C18.22 14.5273 18.093 13.4813 17.275 13.0373L15.365 11.9983C14.837 11.7123 14.219 11.8063 13.835 12.1883L13.38 12.6413L12.85 12.1093C13.38 12.6413 13.379 12.6423 13.378 12.6423L13.377 12.6443L13.374 12.6473L13.367 12.6533L13.352 12.6673C13.3098 12.7065 13.2643 12.7419 13.216 12.7733C13.136 12.8263 13.03 12.8853 12.897 12.9343C12.627 13.0353 12.269 13.0893 11.827 13.0213C10.96 12.8883 9.81103 12.2973 8.28403 10.7793C6.75803 9.2613 6.16203 8.1193 6.02803 7.2533C5.95903 6.8113 6.01403 6.4533 6.11603 6.1833C6.17216 6.03137 6.25254 5.88953 6.35403 5.7633L6.38603 5.7283L6.40003 5.7133L6.40603 5.7073L6.40903 5.7043L6.41103 5.7023L6.69903 5.4163C7.12703 4.9893 7.18703 4.2823 6.78403 3.7433L5.52303 2.0593Z"
-                            fill="black" /> </svg>
-                    <span>Phone</span>
-                    <a href="tel:+97142626171" target="_blank">
-                        +971-4-26 26 171
-                    </a>
-                </div>
+                        </a>
+                        </li>
+                        <li>
+ 
+                        <span>   Phone</span>
+                        <a href="tel:+971558596270" target="_blank">
+                     +971 55 859 6270
+                        </a>
+                        <a href="tel:+971558596270" target="_blank">
+                     +971 55 859 6270
+                        </a>
+                        </li>
+                         </ul>
+                    </li>
+                </ul>
 
             </nav>
 
         </div>
+
+             <div class="offcanvas-footer container-ctn">
+                <strong>Folow Us</strong>
+            <ul class="d-flex flex-wrap ">
+                <li>
+                    <a href="" class="facebook" aria-label="click to visit our facebook page" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M20.976 7.576C22.9449 5.60679 25.6154 4.50033 28.4 4.5H33.8C34.1978 4.5 34.5794 4.65804 34.8607 4.93934C35.142 5.22064 35.3 5.60218 35.3 6V13.2C35.3 13.5978 35.142 13.9794 34.8607 14.2607C34.5794 14.542 34.1978 14.7 33.8 14.7H28.4C28.3606 14.7 28.3216 14.7078 28.2852 14.7228C28.2488 14.7379 28.2157 14.76 28.1879 14.7879C28.16 14.8157 28.1379 14.8488 28.1228 14.8852C28.1078 14.9216 28.1 14.9606 28.1 15V18.9H33.8C34.028 18.8999 34.2531 18.9517 34.4581 19.0517C34.6631 19.1516 34.8426 19.2969 34.9829 19.4766C35.1233 19.6563 35.2209 19.8657 35.2682 20.0888C35.3155 20.3119 35.3113 20.5428 35.256 20.764L33.456 27.964C33.3748 28.2886 33.1874 28.5768 32.9235 28.7826C32.6597 28.9885 32.3346 29.1002 32 29.1H28.1V42C28.1 42.3978 27.942 42.7794 27.6607 43.0607C27.3794 43.342 26.9978 43.5 26.6 43.5H19.4C19.0022 43.5 18.6206 43.342 18.3393 43.0607C18.058 42.7794 17.9 42.3978 17.9 42V29.1H14C13.6022 29.1 13.2206 28.942 12.9393 28.6607C12.658 28.3794 12.5 27.9978 12.5 27.6V20.4C12.5 20.203 12.5388 20.008 12.6142 19.826C12.6896 19.644 12.8001 19.4786 12.9393 19.3393C13.0786 19.2001 13.244 19.0896 13.426 19.0142C13.608 18.9388 13.803 18.9 14 18.9H17.9V15C17.9003 12.2154 19.0068 9.54488 20.976 7.576ZM28.4 7.5C26.4109 7.5 24.5032 8.29018 23.0967 9.6967C21.6902 11.1032 20.9 13.0109 20.9 15V20.4C20.9 20.7978 20.742 21.1794 20.4607 21.4607C20.1794 21.742 19.7978 21.9 19.4 21.9H15.5V26.1H19.4C19.7978 26.1 20.1794 26.258 20.4607 26.5393C20.742 26.8206 20.9 27.2022 20.9 27.6V40.5H25.1V27.6C25.1 27.2022 25.258 26.8206 25.5393 26.5393C25.8206 26.258 26.2022 26.1 26.6 26.1H30.828L31.878 21.9H26.6C26.2022 21.9 25.8206 21.742 25.5393 21.4607C25.258 21.1794 25.1 20.7978 25.1 20.4V15C25.1 14.1248 25.4477 13.2854 26.0665 12.6665C26.6854 12.0477 27.5248 11.7 28.4 11.7H32.3V7.5H28.4Z" fill="black"></path> </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="instagram" aria-label="click to visit our instagram page" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"> <path fill-rule="evenodd" clip-rule="evenodd" d="M24 4C18.568 4 17.888 4.024 15.754 4.12C13.626 4.218 12.172 4.556 10.9 5.05C9.56494 5.55163 8.35546 6.33861 7.356 7.356C6.33861 8.35546 5.55163 9.56494 5.05 10.9C4.556 12.172 4.218 13.626 4.12 15.754C4.022 17.888 4 18.568 4 24C4 29.432 4.022 30.112 4.12 32.246C4.218 34.374 4.556 35.828 5.05 37.1C5.55163 38.4351 6.33861 39.6445 7.356 40.644C8.35546 41.6614 9.56494 42.4484 10.9 42.95C12.172 43.444 13.626 43.782 15.754 43.88C17.888 43.976 18.568 44 24 44C29.432 44 30.112 43.976 32.246 43.88C34.374 43.782 35.828 43.444 37.1 42.95C38.4351 42.4484 39.6445 41.6614 40.644 40.644C41.6614 39.6445 42.4484 38.4351 42.95 37.1C43.444 35.828 43.782 34.374 43.88 32.246C43.976 30.112 44 29.432 44 24C44 18.568 43.976 17.888 43.88 15.754C43.782 13.626 43.444 12.172 42.95 10.9C42.4484 9.56494 41.6614 8.35546 40.644 7.356C39.6445 6.33861 38.4351 5.55163 37.1 5.05C35.828 4.556 34.374 4.218 32.246 4.12C30.112 4.024 29.432 4 24 4ZM24 7.604C29.34 7.604 29.972 7.624 32.08 7.72C34.032 7.81 35.09 8.134 35.796 8.408C36.728 8.772 37.396 9.206 38.096 9.904C38.796 10.604 39.228 11.272 39.592 12.204C39.864 12.91 40.192 13.968 40.28 15.918C40.376 18.028 40.396 18.658 40.396 24C40.396 29.34 40.376 29.972 40.28 32.08C40.19 34.032 39.864 35.09 39.592 35.796C39.2714 36.6648 38.7602 37.4507 38.096 38.096C37.396 38.796 36.728 39.228 35.796 39.592C35.09 39.864 34.032 40.192 32.082 40.28C29.974 40.376 29.342 40.396 24 40.396C18.66 40.396 18.026 40.376 15.92 40.28C13.968 40.19 12.91 39.864 12.204 39.592C11.3352 39.2714 10.5493 38.7602 9.904 38.096C9.23982 37.4507 8.72864 36.6648 8.408 35.796C8.134 35.09 7.808 34.032 7.72 32.082C7.624 29.972 7.604 29.342 7.604 24C7.604 18.66 7.624 18.028 7.72 15.92C7.81 13.968 8.134 12.91 8.408 12.204C8.772 11.272 9.206 10.604 9.904 9.904C10.604 9.204 11.272 8.772 12.204 8.408C12.91 8.134 13.968 7.808 15.918 7.72C18.028 7.624 18.658 7.604 24 7.604ZM24 30.666C22.2321 30.666 20.5365 29.9637 19.2864 28.7136C18.0363 27.4635 17.334 25.7679 17.334 24C17.334 22.2321 18.0363 20.5365 19.2864 19.2864C20.5365 18.0363 22.2321 17.334 24 17.334C25.7679 17.334 27.4635 18.0363 28.7136 19.2864C29.9637 20.5365 30.666 22.2321 30.666 24C30.666 25.7679 29.9637 27.4635 28.7136 28.7136C27.4635 29.9637 25.7679 30.666 24 30.666ZM24 13.73C22.6513 13.73 21.3159 13.9956 20.0698 14.5118C18.8238 15.0279 17.6917 15.7844 16.738 16.738C15.7844 17.6917 15.0279 18.8238 14.5118 20.0698C13.9956 21.3159 13.73 22.6513 13.73 24C13.73 25.3487 13.9956 26.6841 14.5118 27.9302C15.0279 29.1762 15.7844 30.3083 16.738 31.262C17.6917 32.2156 18.8238 32.9721 20.0698 33.4882C21.3159 34.0044 22.6513 34.27 24 34.27C26.7238 34.27 29.336 33.188 31.262 31.262C33.188 29.336 34.27 26.7238 34.27 24C34.27 21.2762 33.188 18.664 31.262 16.738C29.336 14.812 26.7238 13.73 24 13.73ZM37.076 13.324C37.076 13.6392 37.0139 13.9513 36.8933 14.2424C36.7727 14.5336 36.5959 14.7982 36.3731 15.0211C36.1502 15.2439 35.8856 15.4207 35.5944 15.5413C35.3033 15.6619 34.9912 15.724 34.676 15.724C34.3608 15.724 34.0487 15.6619 33.7576 15.5413C33.4664 15.4207 33.2018 15.2439 32.9789 15.0211C32.7561 14.7982 32.5793 14.5336 32.4587 14.2424C32.3381 13.9513 32.276 13.6392 32.276 13.324C32.276 12.6875 32.5289 12.077 32.9789 11.6269C33.429 11.1769 34.0395 10.924 34.676 10.924C35.3125 10.924 35.923 11.1769 36.3731 11.6269C36.8231 12.077 37.076 12.6875 37.076 13.324Z" fill="black"></path> </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="linkedin" aria-label="click to visit our linkedin page" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"> <path d="M12.254 6.05884C12.2633 7.24439 11.8056 8.38597 10.9798 9.23672C10.1541 10.0875 9.02669 10.579 7.84139 10.6051C6.65857 10.5622 5.53748 10.0664 4.70985 9.22024C3.88222 8.3741 3.41134 7.24232 3.39453 6.05884C3.44565 4.90549 3.93364 3.81478 4.75948 3.00804C5.58532 2.2013 6.68715 1.73896 7.84139 1.71484C8.99222 1.73942 10.0901 2.20292 10.9104 3.01046C11.7307 3.81801 12.2114 4.90854 12.254 6.05884ZM3.8711 18.6828C3.8711 16.0703 5.53396 16.4783 7.84139 16.4783C10.1488 16.4783 11.7774 16.0703 11.7774 18.6828V44.1366C11.7774 46.7834 10.1145 46.2417 7.84139 46.2417C5.56825 46.2417 3.8711 46.7834 3.8711 44.1366V18.6828ZM18.6345 18.6863C18.6345 17.2257 19.1762 16.6806 20.0231 16.5126C20.87 16.3446 23.7945 16.5126 24.8094 16.5126C25.8277 16.5126 26.2357 18.1754 26.2014 19.4303C27.0734 18.2628 28.2297 17.338 29.5602 16.7439C30.8907 16.1497 32.3512 15.906 33.8025 16.036C35.228 15.949 36.6557 16.1627 37.9932 16.6634C39.3306 17.1641 40.5478 17.9405 41.5656 18.9421C42.5835 19.9438 43.3792 21.1484 43.9013 22.4776C44.4233 23.8069 44.6599 25.2311 44.5957 26.6577V44.0337C44.5957 46.6806 42.9671 46.1388 40.6562 46.1388C38.3454 46.1388 36.7202 46.6806 36.7202 44.0337V30.46C36.78 29.7615 36.6888 29.0583 36.4527 28.3982C36.2166 27.7381 35.8412 27.1365 35.3521 26.6344C34.8629 26.1322 34.2714 25.7412 33.6177 25.4878C32.964 25.2345 32.2635 25.1249 31.5637 25.1663C30.8666 25.1479 30.1735 25.2779 29.5305 25.5478C28.8874 25.8176 28.3091 26.221 27.8338 26.7313C27.3585 27.2416 26.9971 27.8471 26.7736 28.5077C26.5501 29.1683 26.4696 29.8688 26.5374 30.5628V44.1366C26.5374 46.7834 24.8745 46.2417 22.5671 46.2417C20.2597 46.2417 18.6311 46.7834 18.6311 44.1366L18.6345 18.6863Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="pinterest" aria-label="click to visit our pinterest page" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"> <path d="M24 46C36.1503 46 46 36.1503 46 24C46 11.8497 36.1503 2 24 2C11.8497 2 2 11.8497 2 24C2 36.1503 11.8497 46 24 46Z" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16 44.0008L22 22.0008C20.5413 23.3269 19.6691 25.1781 19.5754 27.1472C19.4816 29.1164 20.1739 31.0421 21.5 32.5008C22.8261 33.9595 24.6773 34.8317 26.6464 34.9254C28.6156 35.0192 30.5413 34.3269 32 33.0008C33.4902 31.6679 34.6237 29.9838 35.2976 28.1015C35.9715 26.2192 36.1645 24.1983 35.8589 22.2225C35.5533 20.2467 34.7589 18.3786 33.5478 16.7878C32.3368 15.197 30.7475 13.934 28.9242 13.1136C27.101 12.2931 25.1017 11.9412 23.108 12.0898C21.1142 12.2384 19.1891 12.8828 17.5077 13.9645C15.8262 15.0461 14.4417 16.5308 13.4798 18.2835C12.518 20.0362 12.0093 22.0015 12 24.0008" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path> </svg>                    </a>
+                </li>
+                <li>
+                    <a href="" class="youtube" aria-label="click to visit our youtube page" target="_blank">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4.90039 22.8371C4.90039 16.8031 5.50039 13.7851 7.37439 11.9111C9.24839 10.0371 12.2664 10.0371 18.3004 10.0371H29.7004C35.7344 10.0371 38.7504 10.0371 40.6264 11.9111C42.5024 13.7851 43.1004 16.8031 43.1004 22.8371V25.1611C43.1004 31.1951 42.5004 34.2131 40.6264 36.0871C38.7524 37.9611 35.7344 37.9611 29.7004 37.9611H18.3004C12.2664 37.9611 9.24839 37.9611 7.37439 36.0871C5.50039 34.2131 4.90039 31.1951 4.90039 25.1611V22.8371Z" stroke="black" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M29.372 22.9812L20.836 17.6472C20.6543 17.5337 20.4456 17.4709 20.2314 17.4653C20.0172 17.4596 19.8055 17.5115 19.6181 17.6154C19.4307 17.7193 19.2746 17.8714 19.1659 18.056C19.0572 18.2407 18.9999 18.451 19 18.6652V29.3352C19.0003 29.5493 19.0578 29.7594 19.1667 29.9438C19.2755 30.1281 19.4317 30.28 19.619 30.3836C19.8063 30.4873 20.0179 30.5389 20.2319 30.5332C20.4459 30.5275 20.6545 30.4647 20.836 30.3512L29.372 25.0172C29.5448 24.9094 29.6872 24.7594 29.786 24.5813C29.8848 24.4032 29.9366 24.2029 29.9366 23.9992C29.9366 23.7956 29.8848 23.5953 29.786 23.4172C29.6872 23.2391 29.5448 23.0891 29.372 22.9812Z" stroke="black" stroke-width="3" stroke-linejoin="round"></path> </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="twitter" aria-label="click to visit our twitter page" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"> <path d="M27.8816 20.784L43.0706 3H39.4706L26.2856 18.441L15.7496 3H3.59961L19.5296 26.352L3.59961 45H7.19961L21.1256 28.692L32.2526 45H44.4026L27.8816 20.784ZM22.9526 26.556L21.3386 24.231L8.49561 5.73H14.0246L24.3866 20.661L26.0006 22.986L39.4736 42.396H33.9446L22.9526 26.556Z" fill="black"></path> </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
     </div>
 
     <!-- FIXED BOTTOM MENU (MOBILE) -->

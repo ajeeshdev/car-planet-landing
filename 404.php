@@ -4,7 +4,7 @@
 </section>
 
 
-<section class="not-found">
+<section class="not-found not-found-padding">
     <div class="container-short text-center d-flex flex-column align-items-center">
         <div class="error-illustration">
 

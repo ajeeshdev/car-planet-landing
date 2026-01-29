@@ -2,7 +2,17 @@
     width: 100%;
     z-index: 9999999;
 }
-
+  button.btn-close{
+        background: unset;
+            filter: invert(1);
+        opacity: 1;
+        width: 26px;
+        height: 26px;
+        path{
+            fill: $white;
+            stroke: $white;
+        }
+    }
 .mobile_left_menu {
         min-height: 100vh;
         height: fit-content;
@@ -93,17 +103,7 @@
             }
         }
     }
-    .btn-close{
-        background: unset;
-            filter: invert(1);
-        opacity: 1;
-        width: 26px;
-        height: 26px;
-        path{
-            fill: $white;
-            stroke: $white;
-        }
-    }
+  
 
     
     ul {
@@ -134,37 +134,361 @@
 }
 
 }
+.offcanvas-top{
+    height: 100vh;
+}
+.productMenu{
+    .offcanvas-body {
+        border-top: 1px solid #eee;
 
+    padding-top: 50px;
+}
+    .btn-close {
+        position: absolute;
+        right: 10px;
+        
+            border-radius: 50%;
+    width: 30px;
+    height: 30px;
 
+    path{
+        // stroke: $primaryColor;
+    }
+
+    }
+}
+.product-navigation{
+    > ul{
+        --cols: 1;
+        --col-gap: 30px;
+        --row-gap: 30px;
+        grid-gap: var(--row-gap) var(--col-gap);
+        display: grid;
+        gap: var(--row-gap) var(--col-gap);
+        grid-template-columns: repeat(var(--cols), 1fr);
+         overflow-x: hidden;
+        width: 100%;
+        @include min(576){        --cols: 2;}
+        @include min(768){--col-gap: 42px; --row-gap: 42px;         --cols: 3;}
+        @include min(992){--col-gap: 45px; --row-gap: 45px;         --cols: 4;}
+        @include min(1200){--col-gap: 48px; --row-gap: 48px;}
+        @include min(1350){--col-gap: 51px; --row-gap: 51px;}
+        @include min(1440){--col-gap: 54px; --row-gap: 54px;}
+        @include min(1600){--col-gap: 57px; --row-gap: 57px;}
+        @include min(1900){--col-gap: 60px; --row-gap: 60px;}
+        > li{
+                position: relative;
+                >a{
+                    font-weight: 600;
+                    color: #000;
+                    margin-bottom: 20px;
+                    display: block;
+                }
+                ul{
+                    padding-left: 20px;
+                    a{
+                        color: #414141;
+                        font-weight: 100;
+                        position: relative;
+                        &::before{
+                            transition: 0.5s ease all;
+                            @extend  .position;
+                            width: 0;
+                            height: 2px;
+                            bottom: 0;
+                            background: $primaryColor;
+                            left: 0;
+                        }
+                        &::after{
+                            transition: 0.5s ease all;
+                            @extend  .position;
+                            width: 0;
+                            height: 2px;
+                            bottom: 0;
+                            background: $primaryColor;
+                            right: 0;
+                        }
+                        &:hover{
+                            color: #000;
+                            &::before{
+                                transition: 0.8s ease all;
+                                width: 100%;
+                            }
+                            &::after{
+                                transition: 0.8s ease all;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    li{
+                        +li{
+                            margin-top: 10px;
+                            color: #000;
+                        }
+                    }
+                }
+                    &:before {
+                    background-color: #eee;
+                    content: "";
+                    display: block;
+                    height: 100%;
+                    position: absolute;
+                    right: calc(var(--col-gap) * -.5);
+                    top: 0;
+                    width: 1px;
+                }
+                    &:after {
+                background-color: #eee;
+                bottom: calc(var(--row-gap) * -.5);
+                content: "";
+                display: block;
+                height: 1px;
+                left: calc(var(--col-gap) * -.5);
+                position: absolute;
+                right: calc(var(--col-gap) * -.5);
+            }
+        }
+    }
+}
 .burgerMenu {
-  width: 400px;
-  
+
+    height: 100vh;
+        overflow-y: auto;
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="340" viewBox="0 0 1920 340" fill="none" class="position-absolute w-100"><path d="M1967.43 231.844C1932.71 310.925 1765.82 384.122 1706.55 303.81C1656.95 236.613 1666.69 61.2818 1440.3 121.734C1212.55 182.548 1004.81 71.7788 1054.87 16.4418C1104.92 -38.8942 1275.89 66.7198 1071.83 140.118C867.779 213.516 781.662 108.227 613.171 247.896C491.654 348.627 412.24 355.889 275.667 249.817C216.814 204.111 75.9736 142.583 -13.3598 233.922" stroke="%23EF4136" stroke-width="2" stroke-linecap="round"></path></svg>');
+    background-repeat: no-repeat;
+    background-position: bottom center;   
+    background-size: contain;
+    &::after{
+        @extend .position;
+        width: 100%;
+        height: 100%;
+            background-color: #ffffffa2;
+        left: 0;
+        top: 0;
+            z-index: -1;
+
+        }     
+    .offcanvas-body {
+    border-top: 1px solid #eeeeee;
+        @include min(1200){
+                padding-top: 40px;
+        }
+
+    }
+    .address-info{
+        li{
+            width: fit-content;
+        }
+        ul{
+                 span{
+            font-weight: 600;
+            color: #000;
+                display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 23px;
+    @include min(768){    font-size: 25px;}
+    @include min(992){    font-size: 27px;}
+    @include min(1200){    font-size: 29px;}
+    @include min(1350){    font-size: 31px;}
+    @include min(1440){    font-size: 33px;}
+    @include min(1600){    font-size: 35px;}
+    @include min(1900){    font-size: 38px;}
+        }
+        p,a{
+            display: block;
+            font-size: 16px;
+            @include min(992){font-size: 17px;}
+            @include min(1350){font-size: 18px;}
+            @include min(1600){font-size: 20px;}
+        }
+        }
+    }
+     strong a ,strong{
+      color: $black;
+      display: block;
+          font-weight: 400;
+            font-size: 18px;margin-bottom: 18px;
+        @include min(768){ font-size: 20px;margin-bottom: 20px;}
+        @include min(992){ font-size: 22px;margin-bottom: 22px;}
+        @include min(1200){ font-size: 24px;margin-bottom: 24px;}
+        @include min(1350){ font-size: 26px;margin-bottom: 26px;}
+        @include min(1440){ font-size: 28px;margin-bottom: 28px;}
+        @include min(1600){ font-size: 30px;margin-bottom: 30px;}
+        @include min(1900){ font-size: 35px;margin-bottom: 35px;}
+
+    }
+    .offcanvas-footer{
+        position: relative;
+        z-index: 1;
+        padding-bottom: 30px;
+        svg{
+            width: 30px;
+            height: auto;
+        }
+        a{
+            &:hover{
+                path{
+                   opacity: 0.6;
+                }
+            }
+        }
+        strong{
+             @include max(575){
+         display: inline-block;
+    float: left;
+        }
+        }  
+         ul {
+            @include max(575){
+                padding-left: 15px;
+                // justify-content: center;
+
+                svg{
+                    height: auto;
+                    width: 20px;
+                }
+            }
+        
+    gap: 3%;
+}
+
+    }
+}
+.burgerMenu-nav {
+//   width: 400px;
+   > ul{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        width: 100%;
+
+        > li{   
+                + li{
+                    @include max(575){
+                        margin-top: 15px;
+                    }
+                }
+                position: relative;  
+                width: 100%;
+                @include min(576){
+                    width: 33.3%;
+
+                }
+                @include min(1200){
+                width: 20%;      
+
+                }
+                &:last-child{
+                    width: 100%;
+                    @include min(1200){
+                        width: 40%;
+
+                    }
+                }      
+                  >a{
+                    font-weight: 600;
+                    color: #000;
+                    margin-bottom: 20px;
+                    display: block;
+                }
+                ul{
+                    padding-left: 20px;
+                    a{
+                        color: #414141;
+                        font-weight: 100;
+                        position: relative;
+                        font-size: 15px;
+                        @include min(992){font-size: 16px;}
+                        @include min(1200){font-size: 17px;}
+                        @include min(1350){font-size: 18px;}
+                        @include min(1440){font-size: 19px;}
+                        @include min(1600){font-size: 20px;}
+                        @include min(1900){font-size: 21px;}
+
+                        &::before{
+                            transition: 0.5s ease all;
+                            @extend  .position;
+                            width: 0;
+                            height: 2px;
+                            bottom: 0;
+                            background: $primaryColor;
+                            left: 0;
+                        }
+                        &::after{
+                            transition: 0.5s ease all;
+                            @extend  .position;
+                            width: 0;
+                            height: 2px;
+                            bottom: 0;
+                            background: $primaryColor;
+                            right: 0;
+                        }
+                        &:hover{
+                            color: #000;
+                            &::before{
+                                transition: 0.8s ease all;
+                                width: 100%;
+                            }
+                            &::after{
+                                transition: 0.8s ease all;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    li{
+                        +li{
+                            color: #000;
+                            margin-top: 4px;
+                            @include min(576){  margin-top: 8px;}
+                            @include min(992){  margin-top: 10px;}
+                            @include min(1200){  margin-top: 12px;}
+                            @include min(1350){  margin-top: 14px;}
+                            @include min(1440){  margin-top: 16px;}
+                            @include min(1600){  margin-top: 18px;}
+                            @include min(1900){  margin-top: 20px;}
+                        }
+                    }
+                }
+            //         &:before {
+            //         background-color: #eee;
+            //         content: "";
+            //         display: block;
+            //         height: 100%;
+            //         position: absolute;
+            //         right: calc(var(--col-gap) * -.5);
+            //         top: 0;
+            //         width: 1px;
+            //     }
+            //         &:after {
+            //     background-color: #eee;
+            //     bottom: calc(var(--row-gap) * -.5);
+            //     content: "";
+            //     display: block;
+            //     height: 1px;
+            //     left: calc(var(--col-gap) * -.5);
+            //     position: absolute;
+            //     right: calc(var(--col-gap) * -.5);
+            // }
+        }
+      
+    }
+
   .offcanvas-header {
     align-items: flex-start;
   }
 
+
   button{
     background: unset;
   }
-    ul{
-        margin-bottom: 20px;
-      li{
-        padding: 12px 10px;
-        border-bottom: 1px solid #e3e3e3;
-        &:last-child{
-          border-bottom: unset;
-        }
-        
-      }
-    }
-    a{
-      color: $black;
-      font-size: 20px;
-    }
+   
+  
     .contact-info{
         margin-top: 20Px;
         padding: 20px;
         border: 1px solid #e3e3e3;
+        
         P{
             font-size: 16px;
         }
@@ -187,3 +511,5 @@
         }
     }
 }
+
+

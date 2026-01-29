@@ -1,8 +1,16 @@
-.not-found{
-
-        padding-top: clamp(80px, 7.97vw, 153px);
-        padding-bottom: clamp(80px, 7.97vw, 120px);
+.thank-you-padding{
+        padding-top: clamp(80px, 12.2396vw, 235px);
+    padding-bottom: clamp(80px, 12.6563vw, 243px);
+}
+.not-found-padding{
     
+            padding-top: clamp(80px, 7.97vw, 153px);
+            padding-bottom: clamp(80px, 7.97vw, 120px);
+        
+
+}
+
+.not-found{
    /* Float whole illustration */
 .error-illustration svg {
   animation: float 4s ease-in-out infinite;
@@ -55,10 +63,10 @@
 
     img{
 
-        margin-bottom:  clamp(30px, 3.3vw, 62px);
-            width: 70.726%;
+        margin-bottom:  clamp(16px, 1.66664vw, 32px);
+            width: 40%;
         @include min(768){
-            width: 34.31%;
+            width: 15.1198%;
         }
     }
     h1{
@@ -119,7 +127,7 @@
         
     // }
     .buttonwrapper{
-        margin-top: clamp(18px, 1.876vw, 36px);
+        margin-top: clamp(18px, 1.30206vw, 25px);
         gap:  clamp(7px, 0.7vw, 13px);
         a{
             border-radius: 80px;
@@ -128,10 +136,13 @@
             justify-content: center;
             align-items: center;
             color: #fff;
-            height: 42px;
-            padding: 17px 30px;
+            // height: 42px;
+            padding: 10px 25px;
             &:first-child{
                 background: $primaryColor;
+            }
+            &:hover{
+                background: #000;
             }
         }
         a+ a{
