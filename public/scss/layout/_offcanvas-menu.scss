@@ -4,13 +4,12 @@
 }
   button.btn-close{
         background: unset;
-            filter: invert(1);
+            // filter: invert(1);
         opacity: 1;
         width: 26px;
         height: 26px;
         path{
-            fill: $white;
-            stroke: $white;
+       
         }
     }
 .mobile_left_menu {

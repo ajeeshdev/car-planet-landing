@@ -1360,6 +1360,9 @@ header .header-right .lang-btn {
   cursor: pointer;
   padding: 6px 8px;
 }
+header .header-right .lang-btn span {
+  color: #000;
+}
 @media (min-width: 992px) {
   header .header-right .lang-btn {
     padding: 4px 8px;
@@ -1973,16 +1976,10 @@ html[dir=rtl] .newsletter .formGroup svg {
 
 button.btn-close {
   background: unset;
-  filter: invert(1);
   opacity: 1;
   width: 26px;
   height: 26px;
 }
-button.btn-close path {
-  fill: #fff;
-  stroke: #fff;
-}
-
 .mobile_left_menu {
   min-height: 100vh;
   height: -moz-fit-content;
@@ -2570,7 +2567,8 @@ button.btn-close path {
 }
 
 .productEnquiryForm .modal-dialog {
-  max-width: 100%;
+  max-width: 89%;
+  margin: auto;
 }
 @media (min-width: 768px) {
   .productEnquiryForm .modal-dialog {
@@ -3042,6 +3040,11 @@ button.btn-close path {
   background: #EF4136;
   box-shadow: 0 0 6px rgba(255, 166, 0, 0.6);
   transition: width 0.3s ease;
+}
+
+html[dir=rtl] .modal-content .btn-close {
+  right: unset;
+  left: 4%;
 }
 
 .jq-stars {
@@ -3281,7 +3284,8 @@ button.btn-close path {
 }
 
 .productEnquiryForm .modal-dialog {
-  max-width: 100%;
+  max-width: 89%;
+  margin: auto;
 }
 @media (min-width: 768px) {
   .productEnquiryForm .modal-dialog {
@@ -3755,6 +3759,11 @@ button.btn-close path {
   transition: width 0.3s ease;
 }
 
+html[dir=rtl] .modal-content .btn-close {
+  right: unset;
+  left: 4%;
+}
+
 .banner {
   /* 1. Initial State: Hide the content and move it down slightly */
   /* 2. Active State: When Slick adds the .slick-active class */
@@ -3832,12 +3841,11 @@ button.btn-close path {
   left: 50%;
   transform: translateX(-50%);
   padding-top: 7px;
-  bottom: -25px;
+  bottom: -27px;
   width: 100px;
 }
 @media (min-width: 768px) {
   .banner .scroll {
-    bottom: -27px;
     width: 140.375px;
     padding-top: 16px;
   }
@@ -4066,6 +4074,11 @@ button.btn-close path {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
+}
+@media (max-width: 575px) {
+  .home-about .video-wrapper {
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 992px) {
   .home-about .video-wrapper {
@@ -10424,29 +10437,13 @@ h2 span,
   color: #000;
   line-height: 100%;
   font-size: 25px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 @media (min-width: 576px) {
   h2, .contact-page h1, .h2,
   h2 span,
   .contact-page h1 span, .h2 span, h2 strong, .contact-page h1 strong {
     font-size: 30px;
-    margin-bottom: 18px;
-  }
-}
-@media (min-width: 768px) {
-  h2, .contact-page h1, .h2,
-  h2 span,
-  .contact-page h1 span, .h2 span, h2 strong, .contact-page h1 strong {
-    font-size: 33px;
-    margin-bottom: 20px;
-  }
-}
-@media (min-width: 992px) {
-  h2, .contact-page h1, .h2,
-  h2 span,
-  .contact-page h1 span, .h2 span, h2 strong, .contact-page h1 strong {
-    font-size: 35px;
     margin-bottom: 22px;
   }
 }

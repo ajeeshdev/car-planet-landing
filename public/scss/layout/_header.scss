@@ -161,6 +161,9 @@ header {
       border: none;
       cursor: pointer;
       padding: 6px 8px;
+      span{
+        color: #000;
+      }
       // .current-lang{
       //   @include max(767){
       //     font-size: 0;

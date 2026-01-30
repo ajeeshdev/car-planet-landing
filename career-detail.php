@@ -149,7 +149,7 @@
                                             <a  class="aside" data-bs-toggle="modal" href="#careerForm" role="button">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#272424" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg> </a>
 
                 </div>
-                <a href="career" class="view-more text-center d-block mx-auto ">View All jobs</a>
+                <a href="career.php" class="view-more text-center d-block mx-auto ">View All jobs</a>
             </aside>
         </div>
        </div>

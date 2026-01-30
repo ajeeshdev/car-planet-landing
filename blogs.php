@@ -33,7 +33,7 @@
                                 </span>
                             </div>
                         </div>
-                        <a href="" class="read-more">Read more</a>
+                        <a href="blogs-detail.php" class="read-more">Read more</a>
                     </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                                 </span>
                             </div>
                         </div>
-                        <a href="" class="read-more">Read more</a>
+                        <a href="blogs-detail.php" class="read-more">Read more</a>
                     </div>
                     </div>
                 </div>
@@ -77,7 +77,7 @@
                                 </span>
                             </div>
                         </div>
-                        <a href="" class="read-more">Read more</a>
+                        <a href="blogs-detail.php" class="read-more">Read more</a>
                     </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                                 </span>
                             </div>
                         </div>
-                        <a href="" class="read-more">Read more</a>
+                        <a href="blogs-detail.php" class="read-more">Read more</a>
                     </div>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
                                 </span>
                             </div>
                         </div>
-                        <a href="" class="read-more">Read more</a>
+                        <a href="blogs-detail.php" class="read-more">Read more</a>
                     </div>
                     </div>
                 </div>
@@ -143,7 +143,7 @@
                                 </span>
                             </div>
                         </div>
-                        <a href="" class="read-more">Read more</a>
+                        <a href="blogs-detail.php" class="read-more">Read more</a>
                     </div>
                     </div>
                 </div>
@@ -165,7 +165,7 @@
                                 </span>
                             </div>
                         </div>
-                        <a href="" class="read-more">Read more</a>
+                        <a href="blogs-detail.php" class="read-more">Read more</a>
                     </div>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                                 </span>
                             </div>
                         </div>
-                        <a href="" class="read-more">Read more</a>
+                        <a href="blogs-detail.php" class="read-more">Read more</a>
                     </div>
                     </div>
                 </div>

@@ -40,7 +40,7 @@
                         </div>
                         <div class="butonGroup d-flex flex-wrap align-items-center">
                             <a  class="applay-btn" data-bs-toggle="modal" href="#careerForm" role="button">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#272424" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg> </a>
-                            <a href="" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
+                            <a href="career-detail.php" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
                         </div>
                     </div>
                     
@@ -67,7 +67,7 @@
                         </div>
                         <div class="butonGroup d-flex flex-wrap align-items-center">
                             <a  class="applay-btn" data-bs-toggle="modal" href="#careerForm" role="button">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#272424" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg> </a>
-                            <a href="" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
+                            <a href="career-detail.php" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
                         </div>
                     </div>
 
@@ -94,7 +94,7 @@
                         </div>
                         <div class="butonGroup d-flex flex-wrap align-items-center">
                             <a  class="applay-btn" data-bs-toggle="modal" href="#careerForm" role="button">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#272424" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg> </a>
-                            <a href="" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
+                            <a href="career-detail.php" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
                         </div>
                     </div>
 
@@ -121,7 +121,7 @@
                         </div>
                         <div class="butonGroup d-flex flex-wrap align-items-center">
                             <a  class="applay-btn" data-bs-toggle="modal" href="#careerForm" role="button">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#272424" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg> </a>
-                            <a href="" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
+                            <a href="career-detail.php" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
                         </div>
                     </div>
 
@@ -148,7 +148,7 @@
                         </div>
                         <div class="butonGroup d-flex flex-wrap align-items-center">
                             <a  class="applay-btn" data-bs-toggle="modal" href="#careerForm" role="button">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#272424" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg> </a>
-                            <a href="" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
+                            <a href="career-detail.php" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
                         </div>
                     </div>
 
@@ -175,7 +175,7 @@
                         </div>
                         <div class="butonGroup d-flex flex-wrap align-items-center">
                             <a  class="applay-btn" data-bs-toggle="modal" href="#careerForm" role="button">Apply Now <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#272424" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg> </a>
-                            <a href="" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
+                            <a href="career-detail.php" class="border-btn">Detail Information <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"> <path d="M3.75 10H16.25M16.25 10L11.5625 5M16.25 10L11.5625 15" stroke="#EF4136" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/> </svg></a>
                         </div>
                     </div>
 

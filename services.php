@@ -21,7 +21,7 @@
                     <h3>Onsite Services</h3>
                     <p>At Wellbing, we are committed to delivering personalized and reliable onsite service. Our dedicated engineering center supports the smooth execution of key projects,...</p>
                 </div>
-                <a href="" class="read-more">Read more</a>
+                <a href="services-detail.php" class="read-more">Read more</a>
             </div>
             <div class="services-box">
                 <picture><img src="public/images/services/1.jpg" alt=""></picture>
@@ -29,7 +29,7 @@
                     <h3>After-Sales Support</h3>
                     <p>Customer satisfaction is at the core of our service philosophy. We provide timely spare parts supply and continuous technical support to resolve urgent production...</p>
                 </div>
-                                <a href="" class="read-more">Read more</a>
+                                <a href="services-detail.php" class="read-more">Read more</a>
 
             </div>
              <div class="services-box">
@@ -38,7 +38,7 @@
                     <h3>Spare Parts</h3>
                     <p>We offer a wide range of high-quality spare parts for all Wellbing equipment. With fast supply, complete model availability, and trusted quality, we help customers...</p>
                 </div>
-                                <a href="" class="read-more">Read more</a>
+                                <a href="services-detail.php" class="read-more">Read more</a>
 
         </div>
     </div>

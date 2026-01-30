@@ -1,6 +1,8 @@
 .productEnquiryForm {
   .modal-dialog{
-    max-width: 100%;
+        max-width: 89%;
+    margin: auto;
+
     @include min(768){max-width: 70.8875%}
     @include min(992){max-width: 60%;}
     @include min(1200){max-width: 42.8875%;}
@@ -367,3 +369,10 @@ background: #F5F5F5;
   }
 
 }
+
+  html[dir=rtl]{
+    .modal-content .btn-close{
+      right: unset;
+      left: 4%;
+    }
+  }

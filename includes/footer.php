@@ -13,30 +13,30 @@
                 <div class="quick-links primary-links">
                     <div class="title">Company</div>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About us</a></li>
-                        <li><a href="">Solutions</a></li>
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Career</a></li>
-                        <li><a href="">Blogs</a></li>
-                        <li><a href="">Contact us</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about.php">About us</a></li>
+                        <li><a href="solutions.php">Solutions</a></li>
+                        <li><a href="products.php">Products</a></li>
+                        <li><a href="services.php">Services</a></li>
+                        <li><a href="career.php">Career</a></li>
+                        <li><a href="blogs.php">Blogs</a></li>
+                        <li><a href="contact.php">Contact us</a></li>
                     </ul>
                 </div>
                 <div class="quick-links">
                     <div class="title">Services</div>
                     <ul>
-                        <li><a href="">Onsite Service</a></li>
-                        <li><a href="">After-Sales Support</a></li>
-                        <li><a href="">Spare Parts</a></li>
+                        <li><a href="services-detail.php">Onsite Service</a></li>
+                        <li><a href="services-detail.php">After-Sales Support</a></li>
+                        <li><a href="services-detail.php">Spare Parts</a></li>
                     </ul>
                 </div>
                 <div class="quick-links">
                     <div class="title">Legal</div>
                     <ul>
                         <li><a href="">Disclaimer</a></li>
-                        <li><a href="">Terms and conditions</a></li>
-                        <li><a href="">Privacy policy</a></li>
+                        <li><a href="terms-and-conditions.php">Terms and conditions</a></li>
+                        <li><a href="privacy-policy.php">Privacy policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -112,7 +112,7 @@
             </a>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 25 25" fill="none">
-                    <path d="M1.8125 22.3203L22.3203 1.8125M22.3203 22.3203L1.8125 1.8125" stroke="#0E11A9"
+                    <path d="M1.8125 22.3203L22.3203 1.8125M22.3203 22.3203L1.8125 1.8125" stroke="#000"
                         stroke-width="3.625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </button>
@@ -123,74 +123,74 @@
             <nav aria-label="Mobile product-navigation" class="product-navigation  container-ctn">
                 <ul class="">
                     <li>
-                        <a href="">Product Category</a>
+                        <a href="products-category.php">Product Category</a>
                         <ul>
                             
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">Product Category</a>
+                        <a href="products-category.php">Product Category</a>
                         <ul>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">Product Category</a>
+                        <a href="products-category.php">Product Category</a>
                         <ul>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">Product Category</a>
+                        <a href="products-category.php">Product Category</a>
                         <ul>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">Product Category</a>
+                        <a href="products-category.php">Product Category</a>
                         <ul>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">Product Category</a>
+                        <a href="products-category.php">Product Category</a>
                         <ul>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">Product Category</a>
+                        <a href="products-category.php">Product Category</a>
                         <ul>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="">Product Category</a>
+                        <a href="products-category.php">Product Category</a>
                         <ul>
-                            <li> <a href="">Product Name</a></li>
-                            <li> <a href="">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
+                            <li> <a href="products-detail.php">Product Name</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -225,7 +225,7 @@
                             <li><a href="about.php" aria-label="Learn more about us">About</a></li>
                                 <li><a href="products.php" aria-label="Explore our Product Category">Products</a></li>
                             <li><a href="career.php" aria-label="View career opportunities">Career</a></li>
-                            <li><a href="blog.php" aria-label="View our work">Our Work</a></li>
+                            <li><a href="blogs.php" aria-label="View our work">Blogs</a></li>
                             <li><a href="contact.php" aria-label="Contact us">Contact</a></li>
                         </ul>
                     </li>
@@ -240,14 +240,14 @@
                         </ul>
                     </li>
                     <li>
-                        <strong><a href="services.php" aria-label="Explore our services">Products</a></strong>
+                        <strong><a href="solutions.php" aria-label="Explore our services">Solutions</a></strong>
                           <ul>
-                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
-                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
-                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
-                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
-                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
-                            <li><a href="products-category.php" aria-label="Explore our Product Category">Product Category</a></li>
+                            <li><a href="solutions-detail.php" aria-label="Explore our Product Category">Solution</a></li>
+                            <li><a href="solutions-detail.php" aria-label="Explore our Solution">Solution</a></li>
+                            <li><a href="solutions-detail.php" aria-label="Explore our Solution">Solution</a></li>
+                            <li><a href="solutions-detail.php" aria-label="Explore our Solution">Solution</a></li>
+                            <li><a href="solutions-detail.php" aria-label="Explore our Solution">Solution</a></li>
+                            <li><a href="solutions-detail.php" aria-label="Explore our Solution">Solution</a></li>
                         </ul>
                     </li>
         
