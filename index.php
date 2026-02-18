@@ -268,7 +268,10 @@
 
     <section class="stories commonPadding-120">
         <div class="container-ctn">
-            <h2>Success Stories</h2>
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <h2>Success Stories</h2>
+                <a href="success-stories.php" class="read-more">View all</a>
+            </div>
             <div class="stories-container">
                 <div class="stories-slider">
 
@@ -278,7 +281,7 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <div class="stories-cta-logo d-flex flex-wrap align-items-end justify-content-between">
-                               <a href="" class="read-more">Read more</a>
+                               <a href="success-stories-detail.php" class="read-more">Read more</a>
                                <div class="icon"><img src="public/images/icon/1.png" width="112" height="80"  alt=""></div>
                         </div>
                         <picture>
@@ -291,7 +294,7 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <div class="stories-cta-logo d-flex flex-wrap align-items-end justify-content-between">
-                               <a href="" class="read-more">Read more</a>
+                               <a href="success-stories-detail.php" class="read-more">Read more</a>
                                <div class="icon"><img src="public/images/icon/2.png" width="112" height="80"  alt=""></div>
                         </div>
                         <picture>
@@ -304,7 +307,7 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <div class="stories-cta-logo d-flex flex-wrap align-items-end justify-content-between">
-                               <a href="" class="read-more">Read more</a>
+                               <a href="success-stories-detail.php" class="read-more">Read more</a>
                                <div class="icon"><img src="public/images/icon/3.png" width="112" height="80"  alt=""></div>
                         </div>
                         <picture>
@@ -318,7 +321,7 @@
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <div class="stories-cta-logo d-flex flex-wrap align-items-end justify-content-between">
-                               <a href="" class="read-more">Read more</a>
+                               <a href="success-stories-detail.php" class="read-more">Read more</a>
                                <div class="icon"><img src="public/images/icon/1.png"  width="112" height="80" alt=""></div>
                         </div>
                         <picture>

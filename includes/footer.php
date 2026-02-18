@@ -19,6 +19,7 @@
                         <li><a href="products.php">Products</a></li>
                         <li><a href="services.php">Services</a></li>
                         <li><a href="career.php">Career</a></li>
+                        <li><a href="success-stories.php">Success Stories</a></li>
                         <li><a href="blogs.php">Blogs</a></li>
                         <li><a href="contact.php">Contact us</a></li>
                     </ul>
@@ -225,6 +226,7 @@
                             <li><a href="about.php" aria-label="Learn more about us">About</a></li>
                                 <li><a href="products.php" aria-label="Explore our Product Category">Products</a></li>
                             <li><a href="career.php" aria-label="View career opportunities">Career</a></li>
+                            <li><a href="success-stories.php" aria-label="View our success stories">Success Stories</a></li>
                             <li><a href="blogs.php" aria-label="View our work">Blogs</a></li>
                             <li><a href="contact.php" aria-label="Contact us">Contact</a></li>
                         </ul>

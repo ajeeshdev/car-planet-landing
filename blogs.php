@@ -6,7 +6,7 @@
         <div class="container-ctn">
             <ul class="d-flex flex-wrap align-items-center">
                 <li><a href="index.php">Home</a></li>
-                <li>Contact Us</li>
+                <li>Blog</li>
             </ul>
         </div>
     </section>

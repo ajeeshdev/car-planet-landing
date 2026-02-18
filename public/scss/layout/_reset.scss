@@ -5,7 +5,7 @@
   font-weight: 500;
   font-family: $primary-font;
   font-size: 14px;
-            line-height:  160%;
+  line-height: 160%;
 
 
   @include min(992) {
@@ -27,6 +27,7 @@
   @include min(1600) {
     font-size: 18px;
   }
+
   @include min(1900) {
     font-size: 20px;
   }
@@ -39,15 +40,18 @@ body {
   overflow-x: hidden;
   color: #737374;
 }
-.container-ceo{
-    margin-right: auto;
+
+.container-ceo {
+  margin-right: auto;
   margin-left: auto;
   max-width: 92%;
-  @include min(992){
+
+  @include min(992) {
     max-width: 72.699%;
 
   }
 }
+
 .container-ctn {
   max-width: 93%;
   margin-right: auto;
@@ -61,9 +65,10 @@ body {
     max-width: 87.8662%;
   }
 }
+
 .container-side {
-    max-width: 94%;
-    margin-left: auto;
+  max-width: 94%;
+  margin-left: auto;
 }
 
 ul {
@@ -119,10 +124,11 @@ a {
   }
 
   @include min(1900) {
-    padding-top:100px;
+    padding-top: 100px;
     padding-bottom: 100px;
   }
 }
+
 .commonPadding-pt {
   padding-top: 50px;
 
@@ -150,6 +156,7 @@ a {
     padding-top: 100px;
   }
 }
+
 .commonPadding-pb-120 {
   padding-bottom: 60px;
 
@@ -177,6 +184,7 @@ a {
     padding-bottom: 120px;
   }
 }
+
 .commonPadding-120 {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -211,7 +219,8 @@ a {
     padding-bottom: 120px;
   }
 }
-.commonMargin  {
+
+.commonMargin {
   margin-top: 50px;
   margin-bottom: 50px;
 
@@ -376,6 +385,7 @@ li {
 .list {
   ul {
     margin-top: 18px;
+
     li {
       position: relative;
       padding-left: clamp(22px, 1.87498vw, 36px);
@@ -386,22 +396,46 @@ li {
         background-size: contain;
         background-repeat: no-repeat;
         border-radius: 50%;
-           background-position: center left;
+        background-position: center left;
         left: 0;
         top: 0px;
-            width: 22px;
+        width: 22px;
         height: 22px;
-      background-size: 14px;
+        background-size: 14px;
 
-        @include min(992){
-        background-size: cover;
+        @include min(992) {
+          background-size: cover;
         }
-        @include min(992){width:18px;height: 18px;}
-        @include min(1200){width:20px;height: 20px;}
-        @include min(1350){width:21px;height: 21px;}
-        @include min(1440){width:22px;height: 22px;}
-        @include min(1600){width:23px;height: 23px;}
-        @include min(1900){width:24px;height: 24px;}
+
+        @include min(992) {
+          width: 18px;
+          height: 18px;
+        }
+
+        @include min(1200) {
+          width: 20px;
+          height: 20px;
+        }
+
+        @include min(1350) {
+          width: 21px;
+          height: 21px;
+        }
+
+        @include min(1440) {
+          width: 22px;
+          height: 22px;
+        }
+
+        @include min(1600) {
+          width: 23px;
+          height: 23px;
+        }
+
+        @include min(1900) {
+          width: 24px;
+          height: 24px;
+        }
       }
 
       +li {
@@ -451,6 +485,7 @@ span.error {
 .iti--allow-dropdown input[type="tel"] {
   padding-left: 71px;
 }
+
 .iti--allow-dropdown input[type="number"] {
   padding-left: 71px;
 }
@@ -543,20 +578,24 @@ select {
   background: unset;
   border: unset;
   border-radius: unset;
-      transition: transform 0.35s ease, stroke 0.35s ease;
-path{
-      transition: stroke 0.35s ease;
+  transition: transform 0.35s ease, stroke 0.35s ease;
 
-}
-&:hover{
-path{
-  @include max(991){
-    path:#000
+  path {
+    transition: stroke 0.35s ease;
+
   }
-    @include min(992){
-  stroke: #000;
-}
-}}
+
+  &:hover {
+    path {
+      @include max(991) {
+        path: #000
+      }
+
+      @include min(992) {
+        stroke: #000;
+      }
+    }
+  }
 
 }
 
@@ -910,7 +949,7 @@ input[type=number] {
 
 .modal-backdrop.show {
   background: rgba(3, 6, 16, 0.80);
-      opacity: 1;
+  opacity: 1;
 }
 
 
@@ -930,207 +969,369 @@ input[type=number] {
 }
 
 
- .read-more {
-    color: #000;
-            width: fit-content;
-            position: relative;
-            display: block;
-            font-weight: 700;
-            transition: 0.5s ease all;
-            line-height: 111.111%;
-            padding-right: 33px;
-            @include min(576){padding-right: 28px;}
-            @include min(768){padding-right: 33px;}
-            @include min(992){padding-right: 38px;}
-            @include min(1200){padding-right: 42px;}
-            font-size: clamp(13px, 0.94vw, 18px);
+.read-more {
+  color: #000;
+  width: fit-content;
+  position: relative;
+  display: block;
+  font-weight: 700;
+  transition: 0.5s ease all;
+  line-height: 111.111%;
+  padding-right: 33px;
 
-            &::after {
-                @extend .position;
-                width: clamp(20px, 1.563vw, 30px);
-                height: clamp(20px, 1.563vw, 30px);
-                background-image: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="14.5" stroke="%23EF4136" stroke-dasharray="2 2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M8.25066 14.9992C8.25066 15.1981 8.32968 15.3889 8.47033 15.5295C8.61098 15.6702 8.80175 15.7492 9.00066 15.7492H19.1907L16.4707 18.4692C16.3382 18.6114 16.2661 18.7994 16.2695 18.9937C16.2729 19.188 16.3516 19.3734 16.489 19.5108C16.6265 19.6482 16.8118 19.7269 17.0061 19.7304C17.2004 19.7338 17.3885 19.6617 17.5307 19.5292L21.5307 15.5292C21.6711 15.3886 21.75 15.1979 21.75 14.9992C21.75 14.8004 21.6711 14.6098 21.5307 14.4692L17.5307 10.4692C17.3885 10.3367 17.2004 10.2646 17.0061 10.268C16.8118 10.2714 16.6265 10.3501 16.489 10.4876C16.3516 10.625 16.2729 10.8104 16.2695 11.0047C16.2661 11.199 16.3382 11.387 16.4707 11.5292L19.1907 14.2492H9.00066C8.80175 14.2492 8.61098 14.3282 8.47033 14.4688C8.32968 14.6095 8.25066 14.8003 8.25066 14.9992Z" fill="%23EF4136"/></svg>');
-                background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center right;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
-                            transition: 0.5s ease all;
+  @include min(576) {
+    padding-right: 28px;
+  }
 
+  @include min(768) {
+    padding-right: 33px;
+  }
 
-            }
-            &:hover{
-              color: $primaryColor;
-                &::after{
-                  
-                  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><circle cx="15" cy="15" r="6.5" fill="%23EF4136" stroke="%23EF4136" stroke-dasharray="2 2"/><circle cx="15" cy="15" r="14.5" stroke="%23EF4136" stroke-dasharray="2 2"/></svg>');
-                              background-size: cover;
-                background-repeat: no-repeat;
-                background-position: center right;
-                  transition: 0.5s ease all;
-                        transform: translateY(-50%) rotate(180deg);
-                }
-            }
-        }
+  @include min(992) {
+    padding-right: 30px;
+  }
 
-             .slick-dots{
-            gap: clamp(4px, 2.1vw, 8px);
-            button{
-                    transition: 0.5s ease all;
-    
-                background: #FFF;
-                font-size: 0;
-                border-radius: 20px;
-                width: clamp(10px, 1.0999vw, 20px);
-                height: clamp(10px, 1.0999vw, 20px);
+  @include min(1200) {
+    padding-right: 24px;
+  }
 
-            }
-            .slick-active{
-                button{
-                    transition: 0.5s ease all;
-                    background: $primaryColor;
-                    width: clamp(25px, 2.69vw, 51px);
-    
-                }
-            }
-        }
+  @include min(1350) {
+    padding-right: 30px;
+  }
+
+  @include min(1440) {
+    padding-right: 34px;
+  }
+
+  @include min(1600) {
+    padding-right: 38px;
+  }
+
+  @include min(1900) {
+    padding-right: 42px;
+  }
+
+  font-size: clamp(13px, 0.94vw, 18px);
+
+  &::after {
+    @extend .position;
+    width: clamp(20px, 1.563vw, 30px);
+    height: clamp(20px, 1.563vw, 30px);
+    background-image: url('data:image/svg+xml,<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="15" cy="15" r="14.5" stroke="%23EF4136" stroke-dasharray="2 2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M8.25066 14.9992C8.25066 15.1981 8.32968 15.3889 8.47033 15.5295C8.61098 15.6702 8.80175 15.7492 9.00066 15.7492H19.1907L16.4707 18.4692C16.3382 18.6114 16.2661 18.7994 16.2695 18.9937C16.2729 19.188 16.3516 19.3734 16.489 19.5108C16.6265 19.6482 16.8118 19.7269 17.0061 19.7304C17.2004 19.7338 17.3885 19.6617 17.5307 19.5292L21.5307 15.5292C21.6711 15.3886 21.75 15.1979 21.75 14.9992C21.75 14.8004 21.6711 14.6098 21.5307 14.4692L17.5307 10.4692C17.3885 10.3367 17.2004 10.2646 17.0061 10.268C16.8118 10.2714 16.6265 10.3501 16.489 10.4876C16.3516 10.625 16.2729 10.8104 16.2695 11.0047C16.2661 11.199 16.3382 11.387 16.4707 11.5292L19.1907 14.2492H9.00066C8.80175 14.2492 8.61098 14.3282 8.47033 14.4688C8.32968 14.6095 8.25066 14.8003 8.25066 14.9992Z" fill="%23EF4136"/></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s ease all;
 
 
+  }
 
-           .slick-nav-count{
-        border: 2px solid #D9D9D9;
-        width: fit-content;
-        gap: clamp(10px, 0.94vw, 18px);
-        padding: 9px 4px;
-        @include min(576){padding: 14px 8px;}
-        @include min(768){padding: 16px 10px;}
-        @include min(992){padding: 16.5px 10.5px;         border: 4px solid #D9D9D9;}
-        @include min(1200){padding: 17px 11px;}
-        @include min(1350){padding: 17.5px 11.5px;}
-        @include min(1440){padding: 18px 12px;}
-        @include min(1600){padding: 18.5px 12.5px;}
-        @include min(1900){padding: 19px 13px;}
-        div{
-            &:hover{
-                path{
-                    fill: #737374;
-                }
-            }
-        }
-        .slick-count{
-            padding-top: 4px;
-            line-height: 100%;
-            font-weight: 700;
-            color: $primaryColor;
-            width: 22px;
-        }
+  &:hover {
+    color: $primaryColor;
+
+    &::after {
+
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none"><circle cx="15" cy="15" r="6.5" fill="%23EF4136" stroke="%23EF4136" stroke-dasharray="2 2"/><circle cx="15" cy="15" r="14.5" stroke="%23EF4136" stroke-dasharray="2 2"/></svg>');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center right;
+      transition: 0.5s ease all;
+      transform: translateY(-50%) rotate(180deg);
     }
-
-     .head-container{
-        margin-bottom: 20px;
-        @include min(576){margin-bottom: 18px;}
-        @include min(768){ margin-bottom: 20px;}
-        @include min(992){margin-bottom: 22px;}
-        @include min(1200){margin-bottom: 24px;}
-        @include min(1280){margin-bottom: 28px;}
-        @include min(1350){margin-bottom: 30px;}
-        @include min(1440){margin-bottom: 32px;}
-        @include min(1600){margin-bottom: 34px;}
-        @include min(1900){margin-bottom: 36px;}
-        h1{
-          color: #000;
-          font-weight: 500;
-          line-height: 100% ;
-              font-size: 23px;
-          @include min(576){font-size: 30px; }
-          @include min(768){font-size: 33px;}
-          @include min(992){font-size: 34px; }
-          @include min(1200){font-size: 36px; }
-          @include min(1280){font-size: 45px; }
-          @include min(1350){font-size: 50px; }
-          @include min(1440){font-size: 55px; }
-          @include min(1600){font-size: 60px; }
-          @include min(1900){font-size: 64px;}
-
-        }
-        }
-
-
-
-         .btn-theme {
-            display: block;
-            width: fit-content;
-            color: #fff;
-            background-color: $primaryColor;
-            border-radius: 100px;
-            padding: 4px 18px;
-            @include min(992){padding: 5px 20px;   margin-top:clamp(12px, 1.0999vw, 25px) ;}
-            @include min(1200){padding: 6px 21px;}
-            @include min(1350){padding: 7px 22px;}
-            @include min(1440){padding: 8px 23px;}
-            @include min(1600){padding: 9px 24px;}
-            @include min(1900){padding: 10px 25px;}
-            &:hover {
-                background-color: #000;
-            }
-            &-grey{
-              background: #F1F1F1;
-            color: #000!important;
-            &:hover{
-              color: #fff!important;
-            }
-
-            }
-        }
-
-
-        select:disabled ,input:disabled{
-    opacity: 0.4;
+  }
 }
 
- .border-btn,.applay-btn{
-            line-height: normal;
-            display: flex;
-            align-items: center;
-            border-radius: 100px;
-            gap: clamp(4px, 0.63vw, 12px);
-            padding: 9px 15px 8px 15px;
-            @include max(1199){
-                    width: 100%;
-                    text-align: center;
-                    justify-content: center;
+.slick-dots {
+  gap: clamp(4px, 2.1vw, 8px);
 
-            }
-            @include min(1200){  padding:8px 9px 6px 9px}
-            @include min(1350){  padding:10px 14px 8px 15px}
-            @include min(1440){  padding: 11px 16px 9px 16px;}
-            @include min(1600){  padding: 11px 20px 9px 20px;}
-            @include min(1900){  padding: 13px 25px 10px 25px;}
-            svg{
-                height: auto;
-                width: clamp(16px, 1.0417vw, 20px);
-            }
-        }
-  .applay-btn{
-        background-color: #F1F1F1;
-        color: #272424;
-        &:hover{
-            color: #fff;
-            background-color: $primaryColor;
-            path{
-                stroke: #fff;
-            }
-        }
+  button {
+    transition: 0.5s ease all;
+
+    background: #FFF;
+    font-size: 0;
+    border-radius: 20px;
+    width: clamp(10px, 1.0999vw, 20px);
+    height: clamp(10px, 1.0999vw, 20px);
+
+  }
+
+  .slick-active {
+    button {
+      transition: 0.5s ease all;
+      background: $primaryColor;
+      width: clamp(25px, 2.69vw, 51px);
+
     }
-    .border-btn{
-        border: 1px solid #EF4136;
-        color: #272424;
-  &:hover{
-            color: #fff;
-            background-color: $primaryColor;
-            path{
-                stroke: #fff;
-            }
-        }
+  }
+}
+
+
+
+.slick-nav-count {
+  border: 2px solid #D9D9D9;
+  width: fit-content;
+  gap: clamp(10px, 0.94vw, 18px);
+  padding: 9px 4px;
+
+  @include min(576) {
+    padding: 14px 8px;
+  }
+
+  @include min(768) {
+    padding: 16px 10px;
+  }
+
+  @include min(992) {
+    padding: 16.5px 10.5px;
+    border: 4px solid #D9D9D9;
+  }
+
+  @include min(1200) {
+    padding: 17px 11px;
+  }
+
+  @include min(1350) {
+    padding: 17.5px 11.5px;
+  }
+
+  @include min(1440) {
+    padding: 18px 12px;
+  }
+
+  @include min(1600) {
+    padding: 18.5px 12.5px;
+  }
+
+  @include min(1900) {
+    padding: 19px 13px;
+  }
+
+  div {
+    &:hover {
+      path {
+        fill: #737374;
+      }
     }
+  }
+
+  .slick-count {
+    padding-top: 4px;
+    line-height: 100%;
+    font-weight: 700;
+    color: $primaryColor;
+    width: 22px;
+  }
+}
+
+.head-container {
+  margin-bottom: 20px;
+
+  @include min(576) {
+    margin-bottom: 18px;
+  }
+
+  @include min(768) {
+    margin-bottom: 20px;
+  }
+
+  @include min(992) {
+    margin-bottom: 22px;
+  }
+
+  @include min(1200) {
+    margin-bottom: 24px;
+  }
+
+  @include min(1280) {
+    margin-bottom: 28px;
+  }
+
+  @include min(1350) {
+    margin-bottom: 30px;
+  }
+
+  @include min(1440) {
+    margin-bottom: 32px;
+  }
+
+  @include min(1600) {
+    margin-bottom: 34px;
+  }
+
+  @include min(1900) {
+    margin-bottom: 36px;
+  }
+
+  h1 {
+    color: #000;
+    font-weight: 500;
+    line-height: 100%;
+    font-size: 23px;
+
+    @include min(576) {
+      font-size: 30px;
+    }
+
+    @include min(768) {
+      font-size: 33px;
+    }
+
+    @include min(992) {
+      font-size: 34px;
+    }
+
+    @include min(1200) {
+      font-size: 36px;
+    }
+
+    @include min(1280) {
+      font-size: 45px;
+    }
+
+    @include min(1350) {
+      font-size: 50px;
+    }
+
+    @include min(1440) {
+      font-size: 55px;
+    }
+
+    @include min(1600) {
+      font-size: 60px;
+    }
+
+    @include min(1900) {
+      font-size: 64px;
+    }
+
+  }
+}
+
+
+
+.btn-theme {
+  display: block;
+  width: fit-content;
+  color: #fff;
+  background-color: $primaryColor;
+  border-radius: 100px;
+  padding: 4px 18px;
+
+  @include min(992) {
+    padding: 5px 20px;
+    margin-top: clamp(12px, 1.0999vw, 25px);
+  }
+
+  @include min(1200) {
+    padding: 6px 21px;
+  }
+
+  @include min(1350) {
+    padding: 7px 22px;
+  }
+
+  @include min(1440) {
+    padding: 8px 23px;
+  }
+
+  @include min(1600) {
+    padding: 9px 24px;
+  }
+
+  @include min(1900) {
+    padding: 10px 25px;
+  }
+
+  &:hover {
+    background-color: #000;
+  }
+
+  &-grey {
+    background: #F1F1F1;
+    color: #000 !important;
+
+    &:hover {
+      color: #fff !important;
+    }
+
+  }
+}
+
+
+select:disabled,
+input:disabled {
+  opacity: 0.4;
+}
+
+.border-btn,
+.applay-btn {
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  gap: clamp(4px, 0.63vw, 12px);
+  padding: 9px 15px 8px 15px;
+
+  @include max(1199) {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  @include min(1200) {
+    padding: 8px 9px 6px 9px
+  }
+
+  @include min(1350) {
+    padding: 10px 14px 8px 15px
+  }
+
+  @include min(1440) {
+    padding: 11px 16px 9px 16px;
+  }
+
+  @include min(1600) {
+    padding: 11px 20px 9px 20px;
+  }
+
+  @include min(1900) {
+    padding: 13px 25px 10px 25px;
+  }
+
+  svg {
+    height: auto;
+    width: clamp(16px, 1.0417vw, 20px);
+  }
+}
+
+.applay-btn {
+  background-color: #F1F1F1;
+  color: #272424;
+
+  &:hover {
+    color: #fff;
+    background-color: $primaryColor;
+
+    path {
+      stroke: #fff;
+    }
+  }
+}
+
+.border-btn {
+  border: 1px solid #EF4136;
+  color: #272424;
+
+  &:hover {
+    color: #fff;
+    background-color: $primaryColor;
+
+    path {
+      stroke: #fff;
+    }
+  }
+}
