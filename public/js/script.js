@@ -1,56 +1,4 @@
-  const switcher = document.getElementById('langSwitcher');
-  const button = switcher.querySelector('.lang-btn');
-  const current = switcher.querySelector('.current-lang');
-  const options = switcher.querySelectorAll('.lang-menu li');
 
-  button.addEventListener('click', () => {
-    switcher.classList.toggle('open');
-    button.setAttribute(
-      'aria-expanded',
-      switcher.classList.contains('open')
-    );
-  });
-
-  options.forEach(option => {
-    option.addEventListener('click', () => {
-      const lang = option.dataset.lang;
-      current.textContent = option.textContent;
-
-      if (lang === 'ar') {
-        document.documentElement.lang = 'ar';
-        document.documentElement.dir = 'rtl';
-      } else {
-        document.documentElement.lang = 'en';
-        document.documentElement.dir = 'ltr';
-      }
-
-      switcher.classList.remove('open');
-    });
-  });
-
-  // close on outside click
-  document.addEventListener('click', e => {
-    if (!switcher.contains(e.target)) {
-      switcher.classList.remove('open');
-    }
-  });
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  const switcher = document.getElementById('languageSwitcher');
-
-  if (!switcher) return; // element not present, stop execution
-
-  switcher.addEventListener('change', function () {
-    if (this.value === 'ar') {
-      document.documentElement.lang = 'ar';
-      document.documentElement.dir = 'rtl';
-    } else {
-      document.documentElement.lang = 'en';
-      document.documentElement.dir = 'ltr';
-    }
-  });
-});
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -61,11 +9,11 @@ document.addEventListener("DOMContentLoaded", () => {
     0. Banner
   ------------------------------ */
 $(document).ready(function () {
-  $(".banner-text-slider-init").slick({
+  $(".banner-text-slider").slick({
 slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    asNavFor: ".banner-slider-init",
+    asNavFor: ".banner-image",
     autoplay: true,
     autoplaySpeed: 5000, // 5 seconds per slide
     pauseOnHover: false, // Recommended for background banners
@@ -80,9 +28,9 @@ slidesToShow: 1,
     
   });
 
-  $(".banner-slider-init").slick({
+  $(".banner-image").slick({
 
-    asNavFor: ".banner-text-slider-init",
+    asNavFor: ".banner-text-slider",
     dots: false,
     draggable: true,
     arrows: false,
@@ -223,6 +171,26 @@ $(document).ready(function () {
             }
         ]
     });
+    // Services slider
+    if ($('.services-slider').length) {
+        $('.services-slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            infinite: true,
+            dots: true,
+            variableWidth: true,
+            appendDots: $('.services-dots'),
+            arrows: true,
+            prevArrow: $('.services-prev'),
+            nextArrow: $('.services-next'),
+            responsive: [
+                { breakpoint: 992, settings: { slidesToShow: 2 } },
+                { breakpoint: 576, settings: { slidesToShow: 1 } }
+            ]
+        });
+    }
+
     initSlider('.testimonial-slider', '.testimonial .slick-count', {
         slidesToShow: 2,
         slidesToScroll: 1,

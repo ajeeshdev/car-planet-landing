@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Cariox
+    </title>
+    <meta name="description" content="">
+
+    <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://code.jquery.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="public/images/fav.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="public/images/fav.png" />
+
+    <!-- Libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/lib/slick-full.css" />
+    <link rel="stylesheet" href="public/css/lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="public/css/lib/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Main Style -->
+    <link rel="stylesheet" href="public/scss/style.css" />
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="header-top">
+            <div class="container-ctn">
+                <div class="d-flex flex-wrap align-items-center justify-content-md-end justify-content-between">
+                    <a href="tel:+971523160075" class="d-flex flex-wrap align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48303 0.793297C3.70003 -0.416703 5.70403 -0.201703 6.72303 1.1603L7.98503 2.8443C8.81503 3.9523 8.74103 5.5003 7.75603 6.4793L7.51803 6.7173C7.49104 6.81721 7.4883 6.92211 7.51003 7.0233C7.57303 7.4313 7.91403 8.2953 9.34203 9.7153C10.77 11.1353 11.64 11.4753 12.054 11.5393C12.1583 11.5603 12.2661 11.5572 12.369 11.5303L12.777 11.1243C13.653 10.2543 14.997 10.0913 16.081 10.6803L17.991 11.7203C19.628 12.6083 20.041 14.8323 18.701 16.1653L17.28 17.5773C16.832 18.0223 16.23 18.3933 15.496 18.4623C13.686 18.6313 9.46903 18.4153 5.03603 14.0083C0.899027 9.8943 0.105027 6.3063 0.00402701 4.5383C-0.045973 3.6443 0.376027 2.8883 0.914027 2.3543L2.48303 0.793297ZM5.52303 2.0593C5.01603 1.3823 4.07203 1.3283 3.54003 1.8573L1.97003 3.4173C1.64003 3.7453 1.48203 4.1073 1.50203 4.4533C1.58203 5.8583 2.22203 9.0953 6.09403 12.9453C10.156 16.9833 13.907 17.1043 15.357 16.9683C15.653 16.9413 15.947 16.7873 16.222 16.5143L17.642 15.1013C18.22 14.5273 18.093 13.4813 17.275 13.0373L15.365 11.9983C14.837 11.7123 14.219 11.8063 13.835 12.1883L13.38 12.6413L12.85 12.1093C13.38 12.6413 13.379 12.6423 13.378 12.6423L13.377 12.6443L13.374 12.6473L13.367 12.6533L13.352 12.6673C13.3098 12.7065 13.2643 12.7419 13.216 12.7733C13.136 12.8263 13.03 12.8853 12.897 12.9343C12.627 13.0353 12.269 13.0893 11.827 13.0213C10.96 12.8883 9.81103 12.2973 8.28403 10.7793C6.75803 9.2613 6.16203 8.1193 6.02803 7.2533C5.95903 6.8113 6.01403 6.4533 6.11603 6.1833C6.17216 6.03137 6.25254 5.88953 6.35403 5.7633L6.38603 5.7283L6.40003 5.7133L6.40603 5.7073L6.40903 5.7043L6.41103 5.7023L6.69903 5.4163C7.12703 4.9893 7.18703 4.2823 6.78403 3.7433L5.52303 2.0593Z" fill="#DBDBDB"/>
+                          </svg>
+                          <div>
+                            <span>Abu Dhabi</span>
+                            <p>
+                                +971 52 316 0075
+                            </p>
+                          </div>
+                    </a>
+                    <a href="mailto:info@carplanet.ae" class="d-flex flex-wrap align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M2.35693 7.714L9.33693 12.368C10.2999 13.009 10.7809 13.33 11.3009 13.455C11.7609 13.565 12.2399 13.565 12.6989 13.455C13.2189 13.33 13.6999 13.009 14.6629 12.368L21.6429 7.714M7.15693 19.5H16.8429C18.5229 19.5 19.3629 19.5 20.0049 19.173C20.569 18.8852 21.0276 18.4263 21.3149 17.862C21.6429 17.22 21.6429 16.38 21.6429 14.7V9.3C21.6429 7.62 21.6429 6.78 21.3159 6.138C21.0283 5.57354 20.5694 5.11462 20.0049 4.827C19.3629 4.5 18.5229 4.5 16.8429 4.5H7.15693C5.47693 4.5 4.63693 4.5 3.99493 4.827C3.43084 5.11479 2.97229 5.57369 2.68493 6.138C2.35693 6.78 2.35693 7.62 2.35693 9.3V14.7C2.35693 16.38 2.35693 17.22 2.68393 17.862C2.97155 18.4265 3.43047 18.8854 3.99493 19.173C4.63693 19.5 5.47693 19.5 7.15693 19.5Z" stroke="#DBDBDB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          <div>
+                            <span>Email</span>
+                            <p>
+                                info@carplanet.ae
+                            </p>
+                          </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="header-sticky">
+            <div class="container-ctn">
+                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <picture>
+                    <img src="public/images/logo.png" width="220" height="118" class="img-fluid" alt="Cariox">
+                </picture>
+                <nav class="d-none d-xl-block">
+                    <ul>
+                        <li><a href="">About US</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <a href="" class="header-btn d-none d-lg-block">Get A Quote</a>
+
+                <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#burgerMenu">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 7H25M5 15H25M5 23H25" stroke="white" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </button>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="banner position-relative">
+        <div class="banner-image">
+            <picture>
+                <img src="public/images/banner.jpg" width="1920" height="1019" alt="One Stop Solution for All Your">
+            </picture>
+            <picture>
+                <img src="public/images/banner.jpg" width="1920" height="1019" alt="One Stop Solution for All Your">
+            </picture>
+        </div>
+        <div class="container-ctn">
+            <div class="banner-content d-flex flex-wrap align-items-center justify-content-between">
+                <div class="banner-left">
+                    <div class="banner-text-slider">
+                        <div class="banner-text-item">
+                            <span>One Stop Solution for All Your</span>
+                            <h1>In-Car
+                                Entertainment Security
+                                & Customization
+                            </h1>
+                            <p>We take your drives to the next level with innovative in-car
+                                entertainment services.</p>
+                            <a href="" class="theme-btn">Get A Quote</a>
+                        </div>
+                        <div class="banner-text-item">
+                            <span>One Stop Solution for All Your</span>
+                            <h1>In-Car
+                                Entertainment Security
+                                & Customization
+                            </h1>
+                            <p>We take your drives to the next level with innovative in-car
+                                entertainment services.</p>
+                            <a href="" class="theme-btn">Get A Quote</a>
+                        </div>
+                    </div>
+                    <div class="review-plus-counter d-flex flex-wrap align-items-center">
+                        <picture><img src="public/images/rating.png" width="202" height="85" alt=""></picture>
+                        <div>
+                            <span>1000+</span>
+                            <p>Cars Upgraded</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-form-wrap d-none d-lg-block">
+                    <h3>Get A Quote</h3>
+                    <form class="banner-quote-form">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter full name" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter email" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="tel" placeholder="Enter phone" required />
+                        </div>
+                        <div class="form-group">
+                            <label>Showroom Location</label>
+                            <input type="text" value="Abu Dhabi" />
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="Say something..." required></textarea>
+                        </div>
+                        <div class="form-submit-wrap">
+                            <button type="submit" class="theme-btn btn-submit">Get A Quote</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="banner-dots"></div>
+    </section>
+
+    <section class="mobile-form d-md-none">
+        <div class="banner-form-wrap ">
+            <h3>Get A Quote</h3>
+            <form class="banner-quote-form">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter full name" required />
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter email" required />
+                </div>
+                <div class="form-group">
+                    <label>Phone</label>
+                    <input type="tel" placeholder="Enter phone" required />
+                </div>
+                <div class="form-group">
+                    <label>Showroom Location</label>
+                    <input type="text" value="Abu Dhabi" />
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Say something..." required></textarea>
+                </div>
+                <div class="form-submit-wrap">
+                    <button type="submit" class="btn-submit">Get A Quote</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="our-services commonPadding">
+        <div class="container-services">
+            <div class="section-header text-center">
+                <h2>Our Services</h2>
+                <p>Car Planet is your premier destination for cutting-edge automotive entertainment and enhancement solutions! Advance your driving experience with our complete range of In-Car Entertainment and Audio solutions designed to suit different choices and vehicle types. We have something for everyone, from music lovers to tech-savvy drivers to adventure seekers.</p>
+            </div>
+            <div class="services-slider-wrap">
+                <div class="services-slider">
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="public/images/services/1.jpg" alt="In-Car Entertainment-Audio" width="400" height="260">
+                        </div>
+                        <div class="service-card-body">
+                            <h3>In-Car Entertainment-Audio</h3>
+                            <ul class="service-features">
+                                <li>Inbuilt Audio Systems</li>
+                                <li>Car Accessories</li>
+                                <li>Premium Audio Experience</li>
+                            </ul>
+                            <div class="btn-service-wrap">
+                                <a href="" class="btn-service">Get A Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="public/images/services/2.jpg" alt="In-Car Entertainment-Multimedia" width="400" height="260">
+                        </div>
+                        <div class="service-card-body">
+                            <h3>In-Car Entertainment-Multimedia</h3>
+                            <ul class="service-features">
+                                <li>In-Vehicle Infotainment Systems</li>
+                                <li>Vehicle Safety</li>
+                                <li>Android Auto &amp; Apple CarPlay</li>
+                            </ul>
+                            <div class="btn-service-wrap">
+                                <a href="" class="btn-service">Get A Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="public/images/services/3.jpg" alt="Marine Audio" width="400" height="260">
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Marine Audio</h3>
+                            <ul class="service-features">
+                                <li>Marine Audio Systems</li>
+                                <li>Boat Speakers</li>
+                                <li>Marine Zone control unit</li>
+                            </ul>
+                            <div class="btn-service-wrap">
+                                <a href="" class="btn-service">Get A Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card-image">
+                            <img src="public/images/services/4.jpg" alt="Motorcycle Audio System" width="400" height="260">
+                        </div>
+                        <div class="service-card-body">
+                            <h3>Motorcycle Audio System</h3>
+                            <ul class="service-features">
+                                <li>Motorcycle Speakers</li>
+                                <li>Helmet Audio Solutions</li>
+                                <li>Portable Bike Audio</li>
+                            </ul>
+                            <div class="btn-service-wrap">
+                                <a href="" class="btn-service">Get A Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services-nav d-flex align-items-center justify-content-center">
+                    <button type="button" class="services-prev" aria-label="Previous slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                    </button>
+                    <div class="services-dots"></div>
+                    <button type="button" class="services-next" aria-label="Next slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="experts-in commonPadding">
+        <div class="container-ctn">
+            <div class="section-header text-center">
+                <h2>We Are Experts In</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="brands-grid">
+                <div class="brand-item">
+                    <img src="public/images/brands/1.png" alt="Toyota" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/2.png" alt="Nissan" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/3.png" alt="BMW" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/4.png" alt="Mercedes-Benz" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/5.png" alt="Lexus" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/6.png" alt="Ford" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/7.png" alt="Kia" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/8.png" alt="Hyundai" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/9.png" alt="Porsche" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/10.png" alt="Audi" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/11.png" alt="Jeep" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/12.png" alt="Ferrari" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/13.png" alt="Chevrolet" width="120" height="60" loading="lazy">
+                </div>
+                <div class="brand-item">
+                    <img src="public/images/brands/14.png" alt="Lamborghini" width="120" height="60" loading="lazy">
+                </div>
+            </div>
+            <div class="experts-cta text-center">
+                <a href="" class="theme-btn mx-auto">Get A Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- menu mobile -->
+    <div class="offcanvas offcanvas-end mobile_left_menu" tabindex="-1" id="burgerMenu"
+        aria-labelledby="mobileOffcanvasLabel" aria-modal="true" role="dialog">
+        <div class="offcanvas-header">
+            <h2 class="visually-hidden" id="mobileOffcanvasLabel">Mobile Menu</h2>
+            <a href="index.php" aria-label="Website Logo">
+               
+                <picture>
+                <img src="public/images/logo.png" alt="Spotcast logo" width="180" height="70" loading="lazy" class="img-fluid h-auto" />
+                  
+
+            </picture>
+            </a>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 25 25" fill="none">
+                    <path d="M1.8125 22.3203L22.3203 1.8125M22.3203 22.3203L1.8125 1.8125" stroke="#000"
+                        stroke-width="3.625" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="offcanvas-body container-ctn">
+            <nav aria-label="Mobile primary navigation">
+                <ul>
+                    <li><a href="index.php" aria-label="Go to home page">Home</a></li>
+                    <li><a href="about.php" aria-label="Learn more about us">About</a></li>
+                    <li><a href="services.php" aria-label="Explore our services">Services</a></li>
+                    <li><a href="work.php" aria-label="View our work">Our Work</a></li>
+                    <li><a href="contact-us.php" aria-label="Contact us">Contact</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- FIXED BOTTOM MENU (MOBILE) -->
+    <div class="bottomFixedMenu d-lg-none">
+        <ul>
+            <li> <a href="https://wa.me/+971545864310?text=Can%20I%20get%20more%20details%20about%20your%20service?"
+                    aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0,0,256,256" width="20px" height="20px">
+                        <g fill="#fff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                            stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                            font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                            style="mix-blend-mode: normal">
+                            <g transform="scale(5.12,5.12)">
+                                <path
+                                    d="M25,2c-12.682,0 -23,10.318 -23,23c0,3.96 1.023,7.854 2.963,11.29l-2.926,10.44c-0.096,0.343 -0.003,0.711 0.245,0.966c0.191,0.197 0.451,0.304 0.718,0.304c0.08,0 0.161,-0.01 0.24,-0.029l10.896,-2.699c3.327,1.786 7.074,2.728 10.864,2.728c12.682,0 23,-10.318 23,-23c0,-12.682 -10.318,-23 -23,-23zM36.57,33.116c-0.492,1.362 -2.852,2.605 -3.986,2.772c-1.018,0.149 -2.306,0.213 -3.72,-0.231c-0.857,-0.27 -1.957,-0.628 -3.366,-1.229c-5.923,-2.526 -9.791,-8.415 -10.087,-8.804c-0.295,-0.389 -2.411,-3.161 -2.411,-6.03c0,-2.869 1.525,-4.28 2.067,-4.864c0.542,-0.584 1.181,-0.73 1.575,-0.73c0.394,0 0.787,0.005 1.132,0.021c0.363,0.018 0.85,-0.137 1.329,1.001c0.492,1.168 1.673,4.037 1.819,4.33c0.148,0.292 0.246,0.633 0.05,1.022c-0.196,0.389 -0.294,0.632 -0.59,0.973c-0.296,0.341 -0.62,0.76 -0.886,1.022c-0.296,0.291 -0.603,0.606 -0.259,1.19c0.344,0.584 1.529,2.493 3.285,4.039c2.255,1.986 4.158,2.602 4.748,2.894c0.59,0.292 0.935,0.243 1.279,-0.146c0.344,-0.39 1.476,-1.703 1.869,-2.286c0.393,-0.583 0.787,-0.487 1.329,-0.292c0.542,0.194 3.445,1.604 4.035,1.896c0.59,0.292 0.984,0.438 1.132,0.681c0.148,0.242 0.148,1.41 -0.344,2.771z">
+                                </path>
+                            </g>
+                        </g>
+                    </svg>
+                    <span>Whatsapp</span>
+                </a></li>
+            <li>
+                <button type="button" data-bs-toggle="modal" data-bs-target="#siteEnquiryForm"
+                    aria-label="Open enquiry form">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 512 513"
+                        fill="none">
+                        <path
+                            d="M277.333 0H106.667C47.8507 0 0 47.8507 0 106.667V380.885C0 397.803 9.28 413.291 24.192 421.291C30.976 424.939 38.4213 426.731 45.8453 426.731C54.72 426.731 63.5733 424.149 71.2533 419.051L155.797 362.667H277.333C336.149 362.667 384 314.816 384 256V106.667C384 47.8507 336.149 0 277.333 0ZM512 192V466.219C512 483.136 502.72 498.624 487.808 506.624C481.024 510.272 473.579 512.064 466.155 512.085C457.28 512.085 448.427 509.504 440.768 504.405L356.203 448H234.667C203.733 448 176.064 434.539 156.565 413.44L168.704 405.333H277.333C359.659 405.333 426.667 338.325 426.667 256V106.667C426.667 100.096 426.091 93.696 425.28 87.3387C474.581 96.7253 512 140.011 512 192Z"
+                            fill="white" />
+                    </svg>
+                    <span>Enquiry</span>
+                </button>
+            </li>
+            <li>
+                <a href="tel:+971 54 586 4310" aria-label="Call us">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 512 512"
+                        fill="none">
+                        <path
+                            d="M512 133.12C512 296.107 295.893 512 133.12 512C97.4934 512 64.2134 498.56 39.6801 474.027L18.3467 449.493C-6.39992 424.747 -6.39992 382.933 19.4134 357.12C20.0534 356.48 71.4667 317.013 71.4667 317.013C97.0668 292.693 137.387 292.693 162.773 317.013L193.92 341.973C262.187 312.96 310.613 264.32 341.76 193.707L317.013 162.56C292.48 137.173 292.48 96.6401 317.013 71.2534C317.013 71.2534 356.48 19.8401 357.12 19.2001C382.933 -6.61325 424.747 -6.61325 450.56 19.2001L472.96 38.6134C498.56 64.0001 512 97.2801 512 132.907V133.12Z"
+                            fill="white" />
+                    </svg>
+                    <span>Phone</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- LEFT FIXED BOX (DESKTOP) -->
+
+    <div class="leftFixedBox">
+        <div class="btn-group dropstart"></div>
+        <!-- WhatsApp side button -->
+        <div class="QuickSideRightBar QuickSideRightBarWhatsapp">
+            <a href="https://wa.me/+971545864310?text=Can%20I%20get%20more%20details%20about%20your%20service?"
+                target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+                <div class="iconBox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 35 35" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M29.7568 5.08667C26.4814 1.80833 22.1268 0.00145833 17.4878 0C7.92846 0 0.148255 7.77875 0.14388 17.3425C0.142422 20.3992 0.941589 23.3829 2.45971 26.0137L-0.00195312 35L9.19138 32.5879C11.7245 33.9704 14.577 34.6981 17.4791 34.6996H17.4864C27.0443 34.6996 34.826 26.9194 34.8303 17.3556C34.8333 12.7225 33.0308 8.36354 29.7568 5.08667ZM17.4878 31.7698H17.482C14.8949 31.7698 12.3589 31.0742 10.1451 29.7602L9.61867 29.4481L4.16305 30.8788L5.61992 25.5587L5.27721 25.0133C3.83346 22.7179 3.07221 20.0652 3.07367 17.3425C3.07659 9.39458 9.5443 2.92833 17.4951 2.92833C21.3451 2.92833 24.9647 4.43042 27.686 7.15458C30.4072 9.88021 31.9049 13.5013 31.9035 17.3527C31.8991 25.3035 25.4328 31.7698 17.4878 31.7698ZM25.3949 20.9738C24.9618 20.7565 22.8312 19.7079 22.433 19.5635C22.0364 19.4192 21.7476 19.3463 21.4574 19.7794C21.1672 20.2125 20.3389 21.1896 20.0851 21.4798C19.8328 21.7685 19.5791 21.805 19.146 21.5877C18.7128 21.3704 17.3158 20.914 15.6605 19.4367C14.3728 18.2875 13.5022 16.8685 13.2499 16.434C12.9976 15.9994 13.2237 15.766 13.4395 15.5502C13.6349 15.3563 13.8726 15.0442 14.0899 14.7904C14.3087 14.5396 14.3801 14.3588 14.526 14.0685C14.6703 13.7798 14.5989 13.526 14.4895 13.3088C14.3801 13.0929 13.5139 10.9594 13.1537 10.0917C12.8022 9.24583 12.4449 9.36104 12.178 9.34792C11.9258 9.33479 11.637 9.33333 11.3468 9.33333C11.058 9.33333 10.5885 9.44125 10.1918 9.87583C9.79513 10.3104 8.67513 11.359 8.67513 13.491C8.67513 15.6246 10.2283 17.6852 10.4441 17.974C10.6599 18.2627 13.4993 22.6406 17.8466 24.5175C18.8805 24.9638 19.6885 25.2306 20.317 25.4304C21.3553 25.76 22.3003 25.7133 23.047 25.6025C23.8797 25.4785 25.6108 24.554 25.9724 23.5419C26.3341 22.5298 26.3341 21.6606 26.2247 21.4812C26.1168 21.299 25.828 21.191 25.3949 20.9738Z"
+                            fill="white"></path>
+                    </svg>
+                </div>
+                <!--<div class="slideLeft">-->
+                <!--    <span class="textRight">+971 54 586 4310</span>-->
+                <!--</div>-->
+            </a>
+        </div>
+        <!-- Phone side button -->
+        <div class="QuickSideRightBar QuickSideRightBarWhatsapp">
+            <a href="tel:+971545864310" aria-label="Call us">
+                <div class="iconBox animateBox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 35 35" fill="none">
+                        <path
+                            d="M18.8994 1.46066C18.8994 1.07389 19.053 0.702955 19.3265 0.429465C19.6 0.155974 19.971 0.00232891 20.3577 0.00232891C24.2242 0.00657499 27.931 1.54439 30.665 4.27838C33.399 7.01236 34.9368 10.7192 34.9411 14.5857C34.9411 14.9724 34.7874 15.3434 34.5139 15.6169C34.2404 15.8904 33.8695 16.044 33.4827 16.044C33.096 16.044 32.725 15.8904 32.4515 15.6169C32.178 15.3434 32.0244 14.9724 32.0244 14.5857C32.0209 11.4925 30.7906 8.52709 28.6035 6.33992C26.4163 4.15275 23.4509 2.92247 20.3577 2.919C19.971 2.919 19.6 2.76535 19.3265 2.49186C19.053 2.21837 18.8994 1.84744 18.8994 1.46066V1.46066ZM20.3577 8.75233C21.9048 8.75233 23.3886 9.36691 24.4825 10.4609C25.5765 11.5548 26.1911 13.0386 26.1911 14.5857C26.1911 14.9724 26.3447 15.3434 26.6182 15.6169C26.8917 15.8904 27.2626 16.044 27.6494 16.044C28.0362 16.044 28.4071 15.8904 28.6806 15.6169C28.9541 15.3434 29.1077 14.9724 29.1077 14.5857C29.1054 12.2657 28.1828 10.0415 26.5424 8.40104C24.9019 6.7606 22.6777 5.83798 20.3577 5.83566C19.971 5.83566 19.6 5.98931 19.3265 6.2628C19.053 6.53629 18.8994 6.90722 18.8994 7.294C18.8994 7.68077 19.053 8.0517 19.3265 8.32519C19.6 8.59868 19.971 8.75233 20.3577 8.75233V8.75233ZM33.6184 24.4134C34.4635 25.2608 34.9381 26.4088 34.9381 27.6057C34.9381 28.8025 34.4635 29.9505 33.6184 30.798L32.2913 32.3277C20.3475 43.7625 -8.71707 14.7052 2.54127 2.72358L4.21835 1.26525C5.06676 0.443733 6.2045 -0.0107245 7.38542 0.000192222C8.56634 0.011109 9.69548 0.486522 10.5286 1.32358C10.5738 1.36879 13.2761 4.879 13.2761 4.879C14.0779 5.72137 14.5243 6.84035 14.5224 8.00333C14.5205 9.16632 14.0704 10.2838 13.2659 11.1236L11.5771 13.2469C12.5117 15.5177 13.8857 17.5814 15.6203 19.3196C17.355 21.0577 19.4159 22.4359 21.6848 23.375L23.8213 21.6761C24.6611 20.8721 25.7784 20.4226 26.9411 20.421C28.1037 20.4194 29.2223 20.8657 30.0644 21.6673C30.0644 21.6673 33.5731 24.3682 33.6184 24.4134ZM31.6117 26.5338C31.6117 26.5338 28.1219 23.849 28.0767 23.8038C27.7762 23.5059 27.3703 23.3388 26.9472 23.3388C26.5241 23.3388 26.1182 23.5059 25.8177 23.8038C25.7784 23.8446 22.8369 26.1882 22.8369 26.1882C22.6387 26.3459 22.4028 26.4494 22.1524 26.4882C21.9021 26.5271 21.6459 26.5001 21.4092 26.4098C18.4699 25.3155 15.8001 23.6022 13.5806 21.386C11.3612 19.1698 9.64394 16.5025 8.54523 13.5648C8.44781 13.3249 8.41605 13.0633 8.45321 12.807C8.49037 12.5507 8.59512 12.3089 8.75669 12.1065C8.75669 12.1065 11.1002 9.16358 11.1396 9.12566C11.4375 8.82522 11.6046 8.41927 11.6046 7.99618C11.6046 7.5731 11.4375 7.16714 11.1396 6.8667C11.0944 6.82295 8.4096 3.33025 8.4096 3.33025C8.10466 3.05682 7.70669 2.91038 7.29725 2.92096C6.88782 2.93153 6.49793 3.09832 6.20752 3.38712L4.53044 4.84545C-3.69748 14.7388 21.4894 38.5286 30.1592 30.3357L31.4877 28.8044C31.7991 28.516 31.986 28.1179 32.0092 27.6942C32.0323 27.2705 31.8898 26.8543 31.6117 26.5338V26.5338Z"
+                            fill="white"></path>
+                    </svg>
+                </div>
+                <!--<div class="slideLeft">-->
+                <!--    <span class="textRight">+971545864310</span>-->
+                <!--</div>-->
+            </a>
+        </div>
+        <!-- Enquiry side button -->
+        <div class="QuickSideRightBar QuickSideRightBarWhatsapp">
+            <a data-bs-toggle="modal" data-bs-target="#siteEnquiryForm" role="button" aria-label="Open enquiry form">
+                <div class="iconBox animateBox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 512 513"
+                        fill="none">
+                        <path
+                            d="M277.333 0H106.667C47.8507 0 0 47.8507 0 106.667V380.885C0 397.803 9.28 413.291 24.192 421.291C30.976 424.939 38.4213 426.731 45.8453 426.731C54.72 426.731 63.5733 424.149 71.2533 419.051L155.797 362.667H277.333C336.149 362.667 384 314.816 384 256V106.667C384 47.8507 336.149 0 277.333 0ZM512 192V466.219C512 483.136 502.72 498.624 487.808 506.624C481.024 510.272 473.579 512.064 466.155 512.085C457.28 512.085 448.427 509.504 440.768 504.405L356.203 448H234.667C203.733 448 176.064 434.539 156.565 413.44L168.704 405.333H277.333C359.659 405.333 426.667 338.325 426.667 256V106.667C426.667 100.096 426.091 93.696 425.28 87.3387C474.581 96.7253 512 140.011 512 192Z"
+                            fill="white"></path>
+                    </svg>
+                </div>
+                <!--<div class="slideLeft">-->
+                <!--    <span class="textRight">Enquire </span>-->
+                <!--</div>-->
+            </a>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="public/js/lib/jquery.fancybox.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="public/js/lib/jquery.star-rating-svg.min.js" defer></script>
+
+    <script src="public/js/script.js" defer></script>
+
+
+
+
+
+</body>
+
+</html>

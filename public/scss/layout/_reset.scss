@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: 500;
+  font-weight: 400;
   font-family: $primary-font;
   font-size: 14px;
-  line-height: 160%;
+  line-height: normal;
 
 
   @include min(992) {
@@ -41,13 +41,12 @@ body {
   color: #737374;
 }
 
-.container-ceo {
-  margin-right: auto;
+.container-services {
   margin-left: auto;
   max-width: 92%;
 
   @include min(992) {
-    max-width: 72.699%;
+    max-width: 94.15%;
 
   }
 }
@@ -1334,4 +1333,12 @@ input:disabled {
       stroke: #fff;
     }
   }
+}
+
+.theme-btn{
+  width: fit-content;
+  color: #fff;
+      display: block;
+  padding: clamp(10px, 1.1vw, 20px);
+  background: $primaryColor;
 }
