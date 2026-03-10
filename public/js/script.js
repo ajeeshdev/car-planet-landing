@@ -191,6 +191,26 @@ $(document).ready(function () {
         });
     }
 
+    // Our Works slider
+    if ($('.works-slider').length) {
+        $('.works-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: false,
+            infinite: true,
+            dots: true,
+            appendDots: $('.works-dots'),
+            arrows: true,
+            prevArrow: $('.works-prev'),
+            nextArrow: $('.works-next'),
+            responsive: [
+                { breakpoint: 1200, settings: { slidesToShow: 3 } },
+                { breakpoint: 992, settings: { slidesToShow: 2 } },
+                { breakpoint: 576, settings: { slidesToShow: 1 } }
+            ]
+        });
+    }
+
     initSlider('.testimonial-slider', '.testimonial .slick-count', {
         slidesToShow: 2,
         slidesToScroll: 1,
