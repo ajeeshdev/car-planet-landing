@@ -1,69 +1,89 @@
-.our-services{
+.our-services {
     background: #fff;
-    .section-header{
+    overflow-x: hidden;
+
+    .section-header {
         max-width: 66.551%;
         margin: 0 auto 46px;
-        h2{
+
+        @include max(575) {
+            max-width: 100%;
+            margin-bottom: 50px;
+        }
+
+        h2 {
             font-size: clamp(28px, 3.5vw, 56px);
             font-weight: 600;
             color: $accentColor;
             margin-bottom: 16px;
         }
-        p{
+
+        p {
             color: #383948;
 
         }
     }
-    .services-slider-wrap{
+
+    .services-slider-wrap {
         position: relative;
     }
-    .services-slider{
-        .slick-list{
+
+    .services-slider {
+        .slick-list {
             margin: 0 calc(-1 * clamp(8px, 1.2vw, 16px));
         }
-        .slick-slide{
-            padding:  23px;
+
+        .slick-slide {
+            padding: 23px;
             margin: 0 clamp(8px, 1.2vw, 16px);
         }
     }
-    .service-card{
+
+    .service-card {
         background: $greyBg;
         border-radius: 20px;
         overflow: hidden;
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
         transition: box-shadow 0.3s ease;
         width: clamp(320px, 47.969vw, 474px);
-        &:hover{
+
+        &:hover {
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
         }
     }
-    .service-card-image{
+
+    .service-card-image {
         box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.22);
 
         border-radius: 20px;
         overflow: hidden;
-        img{
+
+        img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
     }
-    .service-card-body{
+
+    .service-card-body {
         padding-top: 37px;
     }
-    .service-card h3{
+
+    .service-card h3 {
         font-size: clamp(18px, 1.5vw, 22px);
         font-weight: 600;
         color: $accentColor;
         margin-bottom: 16px;
         line-height: 1.3;
-   
+
     }
-    .service-features{
+
+    .service-features {
         list-style: none;
         padding: 0;
         margin: 0 0 24px;
-        li{
+
+        li {
             position: relative;
             padding-left: 35px;
             margin-bottom: 12px;
@@ -71,10 +91,17 @@
             font-weight: 500;
             color: #333;
             line-height: 1.5;
-            &:last-child{
+
+            strong {
+                font-size: 15px;
+
+            }
+
+            &:last-child {
                 margin-bottom: 0;
             }
-            &::after{
+
+            &::after {
                 @extend .position;
                 background: #A81B1B;
                 left: 0;
@@ -85,7 +112,8 @@
                 top: 50%;
                 transform: translateY(-50%);
             }
-            &::before{
+
+            &::before {
                 content: "";
                 background-size: cover;
                 width: 14.4px;
@@ -99,13 +127,15 @@
             }
         }
     }
-    .btn-service-wrap{
+
+    .btn-service-wrap {
         background: #fff;
         border-radius: 10px;
         padding: clamp(10px, 1.2vw, 15px) clamp(15px, 2vw, 20px);
         box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     }
-    .btn-service{
+
+    .btn-service {
         width: fit-content;
         display: block;
         text-align: center;
@@ -117,18 +147,21 @@
         text-decoration: none;
         border-radius: 0;
         transition: background 0.2s ease, transform 0.2s ease;
-        &:hover{
+
+        &:hover {
             background: #8a1616;
             color: $white;
             transform: translateY(-1px);
         }
     }
-    .services-nav{
+
+    .services-nav {
         gap: 16px;
         margin-top: 32px;
     }
+
     .services-prev,
-    .services-next{
+    .services-next {
         width: 40px;
         height: 40px;
         padding: 0;
@@ -141,27 +174,36 @@
         justify-content: center;
         color: $accentColor;
         transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-        &:hover{
+
+        &:hover {
             background: $primaryColor;
             border-color: $primaryColor;
             color: $white;
         }
     }
-    .services-dots{
+
+    .services-dots {
         display: flex;
         align-items: center;
         justify-content: center;
-        .slick-dots{
+
+        @include max(575) {
+            display: none;
+        }
+
+        .slick-dots {
             display: flex;
             gap: 8px;
             list-style: none;
             padding: 0;
             margin: 0;
         }
-        li{
+
+        li {
             margin: 0;
         }
-        button{
+
+        button {
             width: 28px;
             height: 4px;
             padding: 0;
@@ -171,11 +213,13 @@
             font-size: 0;
             cursor: pointer;
             transition: all 0.3s ease;
-            &:hover{
+
+            &:hover {
                 background: #b8b8b8;
             }
         }
-        .slick-active button{
+
+        .slick-active button {
             background: $primaryColor;
             width: 36px;
         }

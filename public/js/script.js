@@ -56,6 +56,23 @@ slidesToShow: 1,
 
 
 
+  /* ------------------------------
+     Smooth Scroll for Nav Links
+  ------------------------------ */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        const headerHeight = document.getElementById('header')?.offsetHeight || 80;
+        const offsetTop = target.getBoundingClientRect().top + window.scrollY - headerHeight - 10;
+        window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+      }
+    });
+  });
+
 //scroll button banner
 
 const scrollBtn = document.getElementById('scroll');
@@ -175,7 +192,7 @@ $(document).ready(function () {
     if ($('.services-slider').length) {
         $('.services-slider').slick({
             slidesToShow: 3,
-            slidesToScroll: 1,
+            slidesToScroll:2,
             autoplay: true,
             infinite: true,
             dots: true,
@@ -185,8 +202,8 @@ $(document).ready(function () {
             prevArrow: $('.services-prev'),
             nextArrow: $('.services-next'),
             responsive: [
-                { breakpoint: 992, settings: { slidesToShow: 2 } },
-                { breakpoint: 576, settings: { slidesToShow: 1 } }
+                { breakpoint: 992, settings: { slidesToShow: 2,  slidesToScroll:2, } },
+                { breakpoint: 576, settings: { slidesToShow: 1,  slidesToScroll:1, } }
             ]
         });
     }
@@ -406,6 +423,8 @@ $(document).ready(function() {
 
   const equalHeightTargets = [
     ".product-card .product-info",
+    // ".review-card",
+    ".service-card"
   ];
 
   window.addEventListener("load", () => {
@@ -481,7 +500,7 @@ $(document).ready(function() {
 
 function initializePhoneInput(selector) {	
   const shippingFormWrapper = document.querySelector(selector + ' .phone_number');	
-  if (shippingFormWrapper !== null) {	
+  if (shippingFormWrapper !== null && typeof window.intlTelInput === 'function') {	
       const phoneInput = window.intlTelInput(shippingFormWrapper, {	
           preferredCountries: ["ae", "sa", "kw", "bh", "qa","om"],	
           excludeCountries: ["ru", "cu", "sy", "ir", "sd", "ss", "kp", "ye", "KR", "UA"],	
@@ -661,6 +680,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const uploadArea = document.querySelector(".upload-area");
   const fileList = document.querySelector(".uploaded-files");
 
+  if (fileInput && uploadArea && fileList) {
+
   // open file dialog on click
 uploadArea.addEventListener("click", (e) => {
   // If click came from label or input, let browser handle it
@@ -744,10 +765,74 @@ uploadArea.addEventListener("click", (e) => {
       if (percent >= 100) clearInterval(timer);
     }, 150);
 
-    // remove file
     fileItem.querySelector(".remove-file").onclick = () => {
       fileItem.remove();
     };
   }
+  } // End uploadArea check
+
+  /* ------------------------------
+     Counter Animation on Scroll
+  ------------------------------ */
+  const counterSection = document.querySelector('.statistics-counter');
+  const counterItems = document.querySelectorAll('.counter-value');
+
+  if (counterSection && counterItems.length) {
+    const counterObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          counterItems.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const duration = 2000; // Animation duration in ms
+            const frameRate = 1000 / 60; // target 60fps
+            const totalFrames = Math.round(duration / frameRate);
+            let count = 0;
+            
+            const animate = (startTime) => {
+                const now = Date.now();
+                const progress = Math.min((now - startTime) / duration, 1);
+                const current = Math.floor(progress * target);
+                
+                counter.innerText = current.toLocaleString(); // Add commas for big numbers
+                
+                if (progress < 1) {
+                    requestAnimationFrame(() => animate(startTime));
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            };
+            animate(Date.now());
+          });
+          observer.unobserve(counterSection);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    counterObserver.observe(counterSection);
+  }
+
+  /* ------------------------------
+     FAQ Accordion
+  ------------------------------ */
+  $('.faq-trigger').on('click', function() {
+    const item = $(this).closest('.faq-item');
+    const isOpen = item.hasClass('active');
+    
+    // Close all other items
+    $('.faq-item').not(item).removeClass('active')
+        .find('.faq-trigger').attr('aria-expanded', 'false')
+        .find('polyline').attr('points', '6 9 12 15 18 9');
+    
+    // Toggle current item
+    if (isOpen) {
+        item.removeClass('active');
+        $(this).attr('aria-expanded', 'false');
+        $(this).find('polyline').attr('points', '6 9 12 15 18 9');
+    } else {
+        item.addClass('active');
+        $(this).attr('aria-expanded', 'true');
+        $(this).find('polyline').attr('points', '18 15 12 9 6 15');
+    }
+  });
 
 });

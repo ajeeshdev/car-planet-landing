@@ -5,7 +5,7 @@
         img{
             // height: 116vh;
             width: 100%;
-            height: auto;
+          height: 520px;
             object-fit: cover;
             @include min(768){
                 height: 528px;
@@ -25,9 +25,7 @@
             @include min(1900){
                 height: 1019px;
             }
-            @include max(767){
-                height: 500px;
-            }
+          
         }
  
     }
@@ -308,7 +306,7 @@
         }
         span{
             display: block;
-            font-size: 35px;
+            font-size: 25px;
             font-weight: 600;
             @include min(768){
                 font-size: 40px;

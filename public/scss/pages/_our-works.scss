@@ -1,9 +1,15 @@
 .our-works {
     background: #fff;
+    overflow-x: hidden;
 
     .section-header {
-        max-width: 65%;
+        max-width: 95%;
         margin: 0 auto 46px;
+
+        @include min(768) {
+            max-width: 65%;
+            margin: 0 auto 46px;
+        }
 
         h2 {
             font-size: clamp(28px, 3.5vw, 56px);
@@ -130,6 +136,12 @@
         display: flex;
         align-items: center;
         gap: 16px;
+        right: 0;
+
+        @include min(768) {
+            position: absolute;
+
+        }
 
         button {
             display: inline-flex;
@@ -176,6 +188,7 @@
 
         li {
             margin: 0;
+            display: flex;
         }
 
         button {
