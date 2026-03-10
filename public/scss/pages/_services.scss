@@ -2,27 +2,7 @@
     background: #fff;
     overflow-x: hidden;
 
-    .section-header {
-        max-width: 66.551%;
-        margin: 0 auto 46px;
-
-        @include max(575) {
-            max-width: 100%;
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-size: clamp(28px, 3.5vw, 56px);
-            font-weight: 600;
-            color: $accentColor;
-            margin-bottom: 16px;
-        }
-
-        p {
-            color: #383948;
-
-        }
-    }
+    
 
     .services-slider-wrap {
         position: relative;

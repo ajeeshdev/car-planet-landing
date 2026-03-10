@@ -1218,6 +1218,26 @@ input:disabled {
   z-index: 9999;
 }
 
+.section-header {
+  max-width: 66.551%;
+  margin: 0 auto 46px;
+}
+@media (max-width: 575px) {
+  .section-header {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+}
+.section-header h2 {
+  font-size: clamp(28px, 3.5vw, 56px);
+  font-weight: 600;
+  color: #272424;
+  margin-bottom: 24px;
+}
+.section-header p {
+  color: #383948;
+}
+
 .header-top {
   background: #10141B;
   padding-top: 26px;
@@ -2376,6 +2396,27 @@ button.btn-close {
   }
 }
 
+.col--12 {
+  width: 100%;
+}
+
+.btn-cancel {
+  background: transparent;
+  border: 1px solid #D9D9D9;
+  color: #4F5762;
+  border-radius: 100px;
+  padding: 8px 24px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 12px;
+}
+.btn-cancel:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
 .careerForm .modal-dialog {
   max-width: 940px;
 }
@@ -3059,15 +3100,6 @@ html[dir=rtl] .modal-content .btn-close {
   background-color: #f4f5f5;
   padding: clamp(60px, 8vw, 120px) 0;
 }
-.our-gallery .section-header {
-  margin-bottom: 50px;
-}
-.our-gallery .section-header h2 {
-  font-size: clamp(32px, 4vw, 48px);
-  font-weight: 800;
-  color: #1a1a1a;
-  letter-spacing: -0.01em;
-}
 .our-gallery .gallery-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -3434,21 +3466,6 @@ html[dir=rtl] .modal-content .btn-close {
 .why-choose-us .why-choose-right {
   flex: 1;
 }
-.why-choose-us .why-choose-right .section-header {
-  margin-bottom: 30px;
-}
-.why-choose-us .why-choose-right .section-header h2 {
-  font-size: clamp(32px, 4vw, 44px);
-  font-weight: 800;
-  color: #000;
-  margin-bottom: 24px;
-}
-.why-choose-us .why-choose-right .section-header p {
-  font-size: 15px;
-  line-height: 1.6;
-  color: #666;
-  max-width: 600px;
-}
 .why-choose-us .choose-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -3519,6 +3536,7 @@ html[dir=rtl] .modal-content .btn-close {
 }
 
 .why-choose-grid {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   margin-top: clamp(40px, 6vw, 90px);
@@ -3595,24 +3613,6 @@ html[dir=rtl] .modal-content .btn-close {
   margin: 0 auto !important;
   position: relative !important;
   z-index: 2 !important;
-}
-.enquiry-section .section-header {
-  margin-bottom: 48px !important;
-}
-.enquiry-section .section-header h2 {
-  font-size: clamp(32px, 3.5vw, 42px) !important;
-  font-weight: 700 !important;
-  color: #000 !important;
-  margin-bottom: 20px !important;
-  letter-spacing: -0.5px !important;
-  line-height: 1.2 !important;
-}
-.enquiry-section .section-header p {
-  max-width: 720px !important;
-  margin: 0 auto !important;
-  color: #666 !important;
-  line-height: 1.5 !important;
-  font-size: 14px !important;
 }
 .enquiry-section .enquiry-form {
   display: block !important;
@@ -4029,6 +4029,27 @@ html[dir=rtl] .modal-content .btn-close {
   .col--6 {
     width: 49.06%;
   }
+}
+
+.col--12 {
+  width: 100%;
+}
+
+.btn-cancel {
+  background: transparent;
+  border: 1px solid #D9D9D9;
+  color: #4F5762;
+  border-radius: 100px;
+  padding: 8px 24px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: 12px;
+}
+.btn-cancel:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
 }
 
 .careerForm .modal-dialog {
@@ -4633,25 +4654,6 @@ html[dir=rtl] .modal-content .btn-close {
   background: #fff;
   overflow-x: hidden;
 }
-.our-services .section-header {
-  max-width: 66.551%;
-  margin: 0 auto 46px;
-}
-@media (max-width: 575px) {
-  .our-services .section-header {
-    max-width: 100%;
-    margin-bottom: 50px;
-  }
-}
-.our-services .section-header h2 {
-  font-size: clamp(28px, 3.5vw, 56px);
-  font-weight: 600;
-  color: #272424;
-  margin-bottom: 16px;
-}
-.our-services .section-header p {
-  color: #383948;
-}
 .our-services .services-slider-wrap {
   position: relative;
 }
@@ -4828,27 +4830,6 @@ html[dir=rtl] .modal-content .btn-close {
 .experts-in {
   background: #F3F3F3;
 }
-.experts-in .section-header {
-  max-width: 65%;
-  margin: 0 auto 106px;
-}
-@media (max-width: 575px) {
-  .experts-in .section-header {
-    max-width: 100%;
-    margin-bottom: 50px;
-  }
-}
-.experts-in .section-header h2 {
-  font-size: clamp(28px, 3.5vw, 48px);
-  font-weight: 600;
-  color: #272424;
-  margin-bottom: 16px;
-}
-.experts-in .section-header p {
-  font-size: clamp(14px, 1.2vw, 16px);
-  line-height: 1.6;
-  color: #272424;
-}
 .experts-in .brands-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -4898,27 +4879,6 @@ html[dir=rtl] .modal-content .btn-close {
 .our-works {
   background: #fff;
   overflow-x: hidden;
-}
-.our-works .section-header {
-  max-width: 95%;
-  margin: 0 auto 46px;
-}
-@media (min-width: 768px) {
-  .our-works .section-header {
-    max-width: 65%;
-    margin: 0 auto 46px;
-  }
-}
-.our-works .section-header h2 {
-  font-size: clamp(28px, 3.5vw, 56px);
-  font-weight: 600;
-  color: #272424;
-  margin-bottom: 16px;
-}
-.our-works .section-header p {
-  font-size: clamp(14px, 1.2vw, 16px);
-  line-height: 1.6;
-  color: #383948;
 }
 .our-works .works-slider {
   margin-bottom: clamp(40px, 5vw, 60px);

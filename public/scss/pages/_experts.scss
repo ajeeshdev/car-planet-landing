@@ -1,28 +1,7 @@
 .experts-in {
     background: #F3F3F3;
 
-    .section-header {
-        max-width: 65%;
-        margin: 0 auto 106px;
-
-        @include max(575) {
-            max-width: 100%;
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-size: clamp(28px, 3.5vw, 48px);
-            font-weight: 600;
-            color: $accentColor;
-            margin-bottom: 16px;
-        }
-
-        p {
-            font-size: clamp(14px, 1.2vw, 16px);
-            line-height: 1.6;
-            color: $accentColor;
-        }
-    }
+   
 
     .brands-grid {
         display: grid;

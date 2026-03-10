@@ -2,28 +2,7 @@
     background: #fff;
     overflow-x: hidden;
 
-    .section-header {
-        max-width: 95%;
-        margin: 0 auto 46px;
-
-        @include min(768) {
-            max-width: 65%;
-            margin: 0 auto 46px;
-        }
-
-        h2 {
-            font-size: clamp(28px, 3.5vw, 56px);
-            font-weight: 600;
-            color: $accentColor;
-            margin-bottom: 16px;
-        }
-
-        p {
-            font-size: clamp(14px, 1.2vw, 16px);
-            line-height: 1.6;
-            color: #383948;
-        }
-    }
+  
 
     .works-slider {
         margin-bottom: clamp(40px, 5vw, 60px);
