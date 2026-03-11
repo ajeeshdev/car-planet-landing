@@ -1,54 +1,81 @@
-.banner{
+.banner {
     padding-top: clamp(15px, 2.693vw, 30px);
-    
-    .banner-image{
-        img{
+
+    .banner-image {
+        picture {
+            position: relative;
+            display: block;
+
+            @include max(767) {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgb(0 0 0 / 61%);
+                    pointer-events: none;
+                    z-index: 1;
+                }
+            }
+        }
+
+        img {
             // height: 116vh;
             width: 100%;
-          height: 520px;
+            height: 520px;
             object-fit: cover;
-            @include min(768){
+
+            @include min(768) {
                 height: 528px;
             }
-            @include min(992){
+
+            @include min(992) {
                 height: 768px;
             }
-            @include min(1200){
+
+            @include min(1200) {
                 height: 848px;
             }
-            @include min(1440){
+
+            @include min(1440) {
                 height: 910px;
             }
-            @include min(1600){
+
+            @include min(1600) {
                 height: 950px;
             }
-            @include min(1900){
+
+            @include min(1900) {
                 height: 1019px;
             }
-          
+
         }
- 
+
     }
 
-        .container-ctn{
-            padding-bottom: clamp(42px, 4.522vw, 84px);
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 0;
-            width: 100%;
-            z-index: 2;
-        }
-    
-    .banner-content{
+    .container-ctn {
+        padding-bottom: clamp(42px, 4.522vw, 84px);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .banner-content {
         gap: clamp(20px, 2.693vw, 40px);
     }
-    .banner-left{
+
+    .banner-left {
         flex: 1;
         min-width: 0;
     }
+
     .banner-text-slider {
-        span{
+        span {
             color: #fff;
             display: block;
             width: fit-content;
@@ -56,26 +83,30 @@
             border: 1px solid #F44336;
             padding: clamp(5px, 0.719vw, 10px) clamp(10px, 1.438vw, 20px);
         }
-        h1{
+
+        h1 {
             color: #fff;
             white-space: pre-line;
             font-size: clamp(25px, 3.86vw, 74px);
             font-weight: 600;
             margin-bottom: 14px;
-    
+
         }
-        p{
+
+        p {
             color: #DBDBDB;
-            width:100%;
+            width: 100%;
             margin-bottom: clamp(18.5px, 2.877vw, 37px);
-            @include min(992){
-                width:31.807%;
+
+            @include min(992) {
+                width: 31.807%;
 
             }
-    
+
         }
 
     }
+
     // a,.btn-submit{
     //     width: fit-content;
     //     color: #fff;
@@ -83,18 +114,19 @@
     //     padding: clamp(10px, 1.1vw, 20px);
     //     background: $primaryColor;
     // }
-    .banner-form-wrap{
+    .banner-form-wrap {
         width: 100%;
         border-radius: 20px;
         border: 1px solid rgba(255, 255, 255, 0.44);
         background: rgba(0, 0, 0, 0.59);
         padding: clamp(18px, 1.9vw, 36px) clamp(20px, 2.1vw, 40px);
-        @include min(992){
+
+        @include min(992) {
             width: 30.06%;
         }
-   
 
-        h3{
+
+        h3 {
             width: 100%;
             border-bottom: 1px solid #fff;
             color: #fff;
@@ -103,17 +135,20 @@
             margin-bottom: clamp(17.5px, 2.5999vw, 35px);
             padding-bottom: clamp(7px, 1.0999vw, 14px);
         }
-        .form-title-line{
+
+        .form-title-line {
             display: block;
             width: clamp(30px, 4.469vw, 60px);
             height: 2px;
             background: rgba(255, 255, 255, 0.5);
             margin-bottom: 24px;
         }
-        .form-group{
+
+        .form-group {
             margin-bottom: clamp(14px, 2.041vw, 28px);
             position: relative;
-            label{
+
+            label {
                 display: inline-block;
                 color: #fff;
                 font-size: clamp(10px, 0.9vw, 16px);
@@ -125,15 +160,19 @@
                 left: 14px;
                 z-index: 1;
             }
-            input{
+
+            input {
                 height: clamp(25px, 2.7vw, 50px);
 
             }
-            textarea{
-                height:clamp(54px, 6.315vw, 108px);
+
+            textarea {
+                height: clamp(54px, 6.315vw, 108px);
                 resize: none;
             }
-            input, textarea{
+
+            input,
+            textarea {
                 width: 100%;
                 padding: 20px 16px 14px;
                 border: 1px solid #888;
@@ -143,35 +182,42 @@
                 font-size: 14px;
                 font-family: inherit;
                 transition: border-color 0.2s;
-                &::placeholder{
+
+                &::placeholder {
                     color: #9ca3af;
                 }
-                &:focus{
+
+                &:focus {
                     outline: none;
                     border-color: rgba(255, 255, 255, 0.5);
                 }
             }
-            textarea{
+
+            textarea {
                 min-height: clamp(50px, 7.692vw, 100px);
                 resize: vertical;
             }
         }
-        .form-submit-wrap{
+
+        .form-submit-wrap {
             display: flex;
             justify-content: flex-end;
             margin-top: 8px;
         }
-        .btn-submit{
+
+        .btn-submit {
             margin-top: -8px;
         }
     }
-    .banner-dots{
+
+    .banner-dots {
         position: absolute;
         bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 3;
-        ul{
+
+        ul {
             display: flex;
             gap: 8px;
             align-items: center;
@@ -180,10 +226,12 @@
             padding: 0;
             margin: 0;
         }
-        li{
+
+        li {
             margin: 0;
         }
-        button{
+
+        button {
             width: clamp(14px, 2.041vw, 28px);
             height: 4px;
             padding: 0;
@@ -193,11 +241,13 @@
             font-size: 0;
             cursor: pointer;
             transition: all 0.3s ease;
-            &:hover{
+
+            &:hover {
                 background: rgba(255, 255, 255, 0.5);
             }
         }
-        .slick-active button{
+
+        .slick-active button {
             background: $primaryColor;
             width: clamp(18px, 2.755vw, 36px);
             height: 4px;
@@ -205,17 +255,19 @@
     }
 }
 
-.mobile-form{
+.mobile-form {
     padding: 24px 16px 40px;
     background: #0a0a0a;
-    .banner-form-wrap{
+
+    .banner-form-wrap {
         width: 100%;
         max-width: 100%;
         border-radius: 16px;
         border: 1px solid rgba(255, 255, 255, 0.44);
         background: rgba(0, 0, 0, 0.59);
         padding: 24px 20px;
-        h3{
+
+        h3 {
             width: 100%;
             border-bottom: 1px solid rgba(255, 255, 255, 0.5);
             color: #fff;
@@ -224,10 +276,12 @@
             margin-bottom: 24px;
             padding-bottom: 12px;
         }
-        .form-group{
+
+        .form-group {
             margin-bottom: 20px;
             position: relative;
-            label{
+
+            label {
                 display: inline-block;
                 color: #fff;
                 font-size: 14px;
@@ -239,14 +293,18 @@
                 left: 12px;
                 z-index: 1;
             }
-            input{
+
+            input {
                 height: 48px;
             }
-            textarea{
+
+            textarea {
                 height: 90px;
                 min-height: 90px;
             }
-            input, textarea{
+
+            input,
+            textarea {
                 width: 100%;
                 padding: 16px 14px 12px;
                 border: 1px solid #888;
@@ -256,21 +314,25 @@
                 font-size: 16px;
                 font-family: inherit;
                 transition: border-color 0.2s;
-                &::placeholder{
+
+                &::placeholder {
                     color: #9ca3af;
                 }
-                &:focus{
+
+                &:focus {
                     outline: none;
                     border-color: rgba(255, 255, 255, 0.5);
                 }
             }
         }
-        .form-submit-wrap{
+
+        .form-submit-wrap {
             display: flex;
             justify-content: stretch;
             margin-top: 8px;
         }
-        .btn-submit{
+
+        .btn-submit {
             width: 100%;
             padding: 14px 24px;
             font-size: 15px;
@@ -280,47 +342,57 @@
             border: none;
             cursor: pointer;
             transition: background 0.2s;
-            &:hover{
+
+            &:hover {
                 background: darken($primaryColor, 6%);
             }
         }
     }
 }
 
-.review-plus-counter{
+.review-plus-counter {
     margin-top: clamp(50.5px, 7.612vw, 127px);
     gap: 21px;
-    img{
+
+    img {
         width: 100%;
         height: auto;
     }
 
-    div{
+    div {
         width: 101px;
         padding: 5px 15px;
         border-radius: 10px;
         border: 1px solid #FFF;
         background: rgba(0, 0, 0, 0.57);
-        @include min(768){
+
+        @include min(768) {
             width: 202px;
         }
-        span{
+
+        span {
             display: block;
             font-size: 25px;
             font-weight: 600;
-            @include min(768){
+
+            @include min(768) {
                 font-size: 40px;
 
             }
 
 
         }
-        span,p{
+
+        span,
+        p {
             color: #FFF;
         }
     }
-    @include max(767){
-        div,picture{
+
+    @include max(767) {
+
+        div,
+        picture {
             width: 46%;
         }
     }
